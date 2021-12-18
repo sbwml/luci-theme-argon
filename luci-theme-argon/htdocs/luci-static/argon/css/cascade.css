@@ -1137,7 +1137,7 @@ h5 {
 .cbi-section-descr {
   font-size: small;
   line-height: 1.42857143;
-  /*padding: 0.5rem 1.5rem;*/
+  padding: 0.5rem 1.5rem;
 }
 .cbi-map-descr + fieldset {
   margin-top: 1rem;
