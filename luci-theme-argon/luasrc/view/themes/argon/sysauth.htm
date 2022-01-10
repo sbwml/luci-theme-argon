@@ -49,7 +49,7 @@
 		attr = fs.stat(f)
 		if attr then
 			local ext = getExtension(fs.basename(f))
-			if ext == "jpg" or ext == "png" or ext == "gif" or ext == "mp4" then
+			if ext == "jpg" or ext == "png" or ext == "webp" or ext == "gif" or ext == "mp4" then
 				local bg = {}
 				bg.type = ext
 				bg.url = theme_dir .. fs.basename(f)
@@ -83,7 +83,7 @@
 		})
 	</script>
 	<% else 
-	local bg_url = media .. "/img/bg1.jpg"
+	local bg_url = media .. "/img/bg1.webp"
 	local bing = "123"
 	if (bgcount == 0 ) then
 		local sys = require "luci.sys"
