@@ -1297,7 +1297,7 @@ td > table > tbody > tr > td,
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.87);
   border: 0;
-  border-radius: 0.2rem;
+  border-radius: 0.375rem;
   background-color: #f0f0f0;
   background-image: none;
   -webkit-appearance: none;
