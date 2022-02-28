@@ -2238,6 +2238,7 @@ td > .ifacebadge,
 .network-status-table .ifacebox {
   flex-grow: 1;
   margin: 0.5em;
+  border-radius: 0.375rem;
 }
 .network-status-table .ifacebox-body {
   display: flex;
@@ -2375,6 +2376,7 @@ td > .ifacebadge,
 .ifacebox-head.active {
   background: #5e72e4;
   background: var(--primary);
+  border-radius: 0.375rem 0.375rem 0px 0px;
 }
 .ifacebox-head.active * {
   color: #fff;
