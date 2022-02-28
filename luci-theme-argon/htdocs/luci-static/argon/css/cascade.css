@@ -1243,7 +1243,7 @@ tr > th,
 .cbi-section-table-row {
   margin-bottom: 1rem;
   text-align: center !important;
-  background: #f4f4f4;
+  background: #0000;
 }
 .cbi-section-table-row:last-child {
   margin-bottom: 0;
