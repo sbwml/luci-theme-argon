@@ -1415,6 +1415,14 @@ td > table > tbody > tr > td,
   background-color: #5e72e4;
   background-color: var(--primary);
 }
+.cbi-button:not(select) {
+  font-weight: normal;
+  color: #fff !important;
+  border: thin solid #5e72e4;
+  border: thin solid var(--primary);
+  background-color: #5e72e4;
+  background-color: var(--primary);
+}
 /* red */
 .btn.danger,
 .cbi-section-remove > .cbi-button,
