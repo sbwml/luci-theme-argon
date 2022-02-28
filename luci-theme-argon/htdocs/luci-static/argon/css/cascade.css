@@ -1380,6 +1380,7 @@ td > table > tbody > tr > td,
 }
 /* dark blue */
 .btn.primary,
+.cbi-button,
 .cbi-page-actions .cbi-button-save,
 .cbi-page-actions .cbi-button-apply + .cbi-button-save,
 .cbi-button-add,
@@ -1398,6 +1399,7 @@ td > table > tbody > tr > td,
   background-color: var(--primary);
 }
 /* light blue */
+.cbi-button,
 .cbi-page-actions .cbi-button-apply,
 .cbi-section-actions .cbi-button-edit,
 .cbi-button-edit,
@@ -1408,14 +1410,6 @@ td > table > tbody > tr > td,
 .cbi-button[value="Upload"],
 .cbi-button[value$="Apply"],
 .cbi-button[onclick="addKey(event)"] {
-  font-weight: normal;
-  color: #fff !important;
-  border: thin solid #5e72e4;
-  border: thin solid var(--primary);
-  background-color: #5e72e4;
-  background-color: var(--primary);
-}
-.cbi-button:not(select) {
   font-weight: normal;
   color: #fff !important;
   border: thin solid #5e72e4;
