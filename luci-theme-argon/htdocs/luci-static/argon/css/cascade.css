@@ -1187,6 +1187,7 @@ table,
   overflow-y: hidden;
   width: 100%;
   font-size: 90%;
+  border-collapse: separate;
 }
 .table .table-titles th {
   background-color: #e9ecef;
