@@ -27,7 +27,7 @@
  *  Licensed to the public under the Apache License 2.0
  */
 body {
-  background: #1e1e1e;
+  background: #000000;
   color: #cccccc;
 }
 .login-page .login-container .login-form {
@@ -58,10 +58,10 @@ body {
   opacity: 0.9;
 }
 header::after {
-  background-color: #1e1e1e !important;
+  background-color: #000000 !important;
 }
 .main .main-left {
-  background-color: #333333 !important;
+  background-color: #000000 !important;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
 }
 .main .main-left .sidenav-header .brand {
@@ -102,7 +102,8 @@ header::after {
   background-color: #333;
 }
 .main .main-right {
-  background-color: #1e1e1e;
+  background-color: #000000;
+  background-attachment: fixed;
 }
 h2 {
   color: #ccc;
@@ -135,7 +136,7 @@ input:-webkit-autofill {
   color: #ccc;
 }
 header.bg-primary {
-  background-color: #1e1e1e !important;
+  background-color: #000000 !important;
 }
 .cbi-map-descr {
   color: #ccc;
@@ -471,7 +472,7 @@ fieldset[id^="cbi-apply-"] {
 }
 header .fill .status span[data-style="active"] {
   color: #ccc !important;
-  background-color: darkolivegreen !important;
+  background-color: #333333 !important;
 }
 #cbi-wireless .td,
 #cbi-network .tr:first-child > .td,
