@@ -686,7 +686,7 @@ header .fill .status span[data-style="active"] {
 }
 header .fill .status span[data-style="inactive"] {
   color: #ffffff !important;
-  background-color: #32325d;
+  background-color: #fb6340;
 }
 #xhr_poll_status {
   display: flex;
