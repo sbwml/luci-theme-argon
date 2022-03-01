@@ -1092,8 +1092,7 @@ h4 {
   font-size: 0.7rem;
   font-weight: 600;
   color: #525f7f;
-  background-color: #e9ecef;
-  background-color: var(--lighter);
+  background-color: #0000;
 }
 h4 em {
   padding: 0 0.5rem;
@@ -1262,9 +1261,6 @@ tr > th,
   text-align: center !important;
 }
 div > table > tbody > tr:nth-of-type(2n),
-div > .table > .tr:nth-of-type(2n) {
-  background-color: #f9f9f9;
-}
 /* fix multiple table */
 table table,
 .table .table,
@@ -1717,12 +1713,12 @@ td > table > tbody > tr > td,
   white-space: normal;
   word-wrap: break-word;
 }
-.cbi-rowstyle-1 {
+/* .cbi-rowstyle-1 {
   background-color: #f9f9f9;
 }
 .cbi-rowstyle-2 {
   background-color: #eee;
-}
+} */
 .cbi-rowstyle-2 .cbi-button-up,
 .cbi-rowstyle-2 .cbi-button-down,
 body:not(.Interfaces) .cbi-rowstyle-2:first-child {
@@ -3020,7 +3016,7 @@ pre.command-output {
     font-size: 1rem;
   }
   .table {
-    /*display: block;*/
+    display: block;
   }
   .Interfaces .table {
     overflow-x: hidden;
@@ -3079,7 +3075,7 @@ pre.command-output {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12); */
   }
   .td.cbi-value-field,
   .cbi-section-table-cell {
