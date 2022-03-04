@@ -222,7 +222,8 @@ h3 {
   border-bottom-right-radius: 0;
 }
 h4 {
-  background-color: #1e1e1f;
+  background-color: #1e1e1e;
+  border-radius: 0.375rem;
 }
 .cbi-progressbar {
   position: relative;
