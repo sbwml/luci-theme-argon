@@ -3020,6 +3020,7 @@ pre.command-output {
   }
   .table {
     display: block;
+    border-radius: 0.375rem;
   }
   .Interfaces .table {
     overflow-x: hidden;
