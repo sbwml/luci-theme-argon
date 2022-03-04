@@ -1241,7 +1241,7 @@ tr > th,
   margin: auto 0;
 }
 .cbi-section-table-row {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   text-align: center !important;
   background: #0000;
 }
