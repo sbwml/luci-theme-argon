@@ -1128,6 +1128,8 @@ h5 {
 .cbi-section .cbi-section {
   padding: 0;
   box-shadow: none;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .cbi-modal .cbi-tabmenu {
   margin-left: 0;
