@@ -2507,7 +2507,7 @@ label > input[type="checkbox"],
 label > input[type="radio"] {
   position: relative;
   top: 0.4rem;
-  right: -1.2rem;
+  right: 0.2rem;
   margin: 0;
   vertical-align: bottom;
 }
