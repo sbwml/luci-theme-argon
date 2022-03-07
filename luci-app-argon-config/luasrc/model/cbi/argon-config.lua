@@ -23,7 +23,6 @@ if nxfs.access('/etc/config/argon') then
 	blur_opacity = uci:get_first('argon', 'global', 'transparency')
 	blur_opacity_dark = uci:get_first('argon', 'global', 'transparency_dark')
 	mode = uci:get_first('argon', 'global', 'mode')
-	bing_background = uci:get_first('argon', 'global', 'bing_background')
 end
 
 function glob(...)
@@ -53,13 +52,7 @@ local transparency_sets = {
 br = SimpleForm('config', translate('Argon Config'), translate('Here you can set the blur and transparency of the login page of argon theme, and manage the background pictures and videos.[Chrome is recommended]'))
 br.reset = false
 br.submit = false
-s = br:section(SimpleSection) 
-
-o = s:option(ListValue, 'bing_background', translate('Wallpaper Source'))
-o:value('0', translate('Built-in'))
-o:value('1', translate('Bing Wallpapers'))
-o.default = bing_background
-o.rmempty = false
+s = br:section(SimpleSection)
 
 o = s:option(ListValue, 'mode', translate('Theme mode'))
 o:value('normal', translate('Follow System'))
