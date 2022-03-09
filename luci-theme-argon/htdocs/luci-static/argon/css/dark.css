@@ -363,6 +363,7 @@ select {
 .ifacebox {
   background-color: none;
   border: 1px solid #1e1e1e;
+  box-shadow: none;
 }
 .ifacebox-head {
   color: #666;
@@ -644,6 +645,12 @@ input,
   .node-status-iptables > .main div > .cbi-map > form {
     background-color: #1e1e1e;
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .tr.placeholder {
+    border-bottom: thin solid #ddd0;
   }
 }
 /* passwall */
