@@ -487,6 +487,7 @@ header .fill .status span[data-style="active"] {
   background-color: #252526;
   border-bottom: 0;
   box-shadow: none;
+  border-radius: 0.375rem;
 }
 td > .ifacebadge,
 .td > .ifacebadge {
