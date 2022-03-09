@@ -646,3 +646,8 @@ input,
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.35);
   }
 }
+/* passwall */
+.block.pure-g {
+    background: #2d2d2d;
+    box-shadow: unset;
+}
