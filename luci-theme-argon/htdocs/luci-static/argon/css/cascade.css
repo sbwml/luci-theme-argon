@@ -534,13 +534,6 @@ footer {
   white-space: nowrap;
   color: #aaa;
 }
-@media screen and (max-width: 1080px) {
-  footer.mobile-hide {
-    display: unset;
-    white-space: normal;
-    text-align: center;
-  }
-}
 footer > a {
   text-decoration: none;
   color: #aaa;
