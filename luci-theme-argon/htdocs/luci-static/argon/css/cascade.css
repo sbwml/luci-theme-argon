@@ -1410,6 +1410,7 @@ td > table > tbody > tr > td,
 .cbi-button[value$="Apply"],
 .cbi-button[onclick="addKey(event)"] {
   font-weight: normal;
+  cursor: pointer;
   color: #fff !important;
   border: thin solid #5e72e4;
   border: thin solid var(--primary);
