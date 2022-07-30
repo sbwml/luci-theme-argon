@@ -1723,11 +1723,13 @@ td > table > tbody > tr > td,
 .cbi-rowstyle-2 {
   background-color: #eee;
 } */
-.cbi-rowstyle-2 .cbi-button-up,
+
+/* .cbi-rowstyle-2 .cbi-button-up,
 .cbi-rowstyle-2 .cbi-button-down,
 body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   background-color: #fff !important;
-}
+} */
+
 .cbi-section-table .cbi-section-table-titles .cbi-section-table-cell {
   width: auto !important;
 }
