@@ -91,11 +91,11 @@
         let prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
         if (prefersDarkMode) {
             viewport = document.querySelector("meta[name=theme-color]");
-            viewport.setAttribute('content', '#000');
+            viewport.setAttribute('content', '#1e1e1e');
         }
     </script>
     <% elseif mode == 'dark' then %>
-    <meta name="theme-color" content="#000">
+    <meta name="theme-color" content="#1e1e1e">
     <% elseif mode == 'light' then %>
     <meta name="theme-color" content="<%=bar_color%>">
     <% end -%>

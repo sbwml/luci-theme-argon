@@ -27,7 +27,7 @@
  *  Licensed to the public under the Apache License 2.0
  */
 body {
-  background: #000000;
+  background: #1e1e1e;
   color: #cccccc;
 }
 .login-page .login-container .login-form {
@@ -58,10 +58,10 @@ body {
   opacity: 0.9;
 }
 header::after {
-  background-color: #000000 !important;
+  background-color: #1e1e1e !important;
 }
 .main .main-left {
-  background-color: #000000 !important;
+  background-color: #1e1e1e !important;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
 }
 .main .main-left .sidenav-header .brand {
@@ -102,7 +102,7 @@ header::after {
   background-color: #333;
 }
 .main .main-right {
-  background-color: #000000;
+  background-color: #1e1e1e;
   background-attachment: fixed;
 }
 h2 {
@@ -136,7 +136,7 @@ input:-webkit-autofill {
   color: #ccc;
 }
 header.bg-primary {
-  background-color: #000000 !important;
+  background-color: #1e1e1e !important;
 }
 .cbi-map-descr {
   color: #ccc;
