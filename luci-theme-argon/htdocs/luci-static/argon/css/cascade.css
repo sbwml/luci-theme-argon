@@ -3026,8 +3026,9 @@ pre.command-output {
     display: block;
     border-radius: 0.375rem;
   }
-  .cbi-section-table {
-    display: table;
+  table.table.cbi-section-table {
+    display: flex;
+    flex-direction: column;
   }
   .Interfaces .table {
     overflow-x: hidden;
