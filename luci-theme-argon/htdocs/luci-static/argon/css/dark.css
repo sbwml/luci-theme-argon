@@ -655,8 +655,3 @@ input,
     border-bottom: thin solid #ddd0;
   }
 }
-/* passwall */
-.block.pure-g {
-    background: #2d2d2d;
-    box-shadow: unset;
-}
