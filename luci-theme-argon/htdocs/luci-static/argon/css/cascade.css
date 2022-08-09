@@ -1188,7 +1188,7 @@ table,
 .table {
   overflow-y: hidden;
   width: 100%;
-  font-size: 90%;
+  font-size: 95%;
   border-collapse: separate;
 }
 .table .table-titles th {
@@ -2928,7 +2928,7 @@ pre.command-output {
     padding-bottom: 1rem;
   }
   table {
-    font-size: 0.7rem !important;
+    font-size: 0.78rem !important;
     width: 100% !important;
   }
   .table .cbi-input-text {
