@@ -44,6 +44,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Sniglet-Regular';
+    src: url('../fonts/Sniglet-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ICON Font */
 
 @font-face {

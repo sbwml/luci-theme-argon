@@ -385,7 +385,8 @@ hr {
 .login-page .login-container .login-form .brand .brand-text {
   font-size: 1.25rem;
   font-weight: 700;
-  font-family: "TypoGraphica";
+  font-family: "Sniglet-Regular";
+  font-weight:bold;
 }
 .login-page .login-container .login-form .brand:hover {
   text-decoration: none;
@@ -572,7 +573,8 @@ small {
   font-size: 1.8rem;
   color: #5e72e4;
   color: var(--primary);
-  font-family: "TypoGraphica";
+  font-family: "Sniglet-Regular";
+  font-weight:bold;
   text-decoration: none;
   text-align: center;
   cursor: default;
@@ -649,7 +651,8 @@ header .fill .container .showSide:hover {
 header .fill .container .brand {
   font-size: 1.5rem;
   color: #fff;
-  font-family: "TypoGraphica";
+  font-family: "Sniglet-Regular";
+  font-weight:bold;
   text-decoration: none;
   padding-left: 1rem;
   cursor: default;
