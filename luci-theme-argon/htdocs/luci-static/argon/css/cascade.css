@@ -74,7 +74,7 @@
   --blur-opacity: 0.5;
   --blur-radius-dark: 10px;
   --blur-opacity-dark: 0.5;
-  --font-family-sans-serif: "Google Sans", "Microsoft Yahei", "WenQuanYi Micro Hei", "sans-serif", "Helvetica Neue", "Helvetica", "Hiragino Sans GB";
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont, "Google Sans", "Microsoft Yahei", "WenQuanYi Micro Hei", "sans-serif", "Helvetica Neue", "Helvetica", "Hiragino Sans GB";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --font-family-normal: Open Sans, PingFangSC-Regular, Microsoft Yahei, WenQuanYi Micro Hei, "Helvetica Neue", Helvetica, Hiragino Sans GB, sans-serif;
 }
@@ -84,7 +84,6 @@ body {
   padding: 0px;
   height: 100%;
   font-size: 16px;
-  font-family: "Google Sans", "Microsoft Yahei", "WenQuanYi Micro Hei", "sans-serif", "Helvetica Neue", "Helvetica", "Hiragino Sans GB";
   font-family: var(--font-family-sans-serif);
 }
 html {
@@ -1453,10 +1452,7 @@ td > table > tbody > tr > td,
 }
 /* green */
 .cbi-button-success,
-.cbi-button-download,
-.cbi-button[name="backup"],
-.cbi-button[value="Download"],
-.cbi-button[value="Save mtdblock"] {
+.cbi-button-download {
   font-weight: normal;
   color: #fff;
   border: thin solid #4cae4c;
