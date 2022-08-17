@@ -2107,7 +2107,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   padding: 8.5px;
   cursor: auto;
   white-space: pre-wrap;
-  color: #eee;
+  color: #ffc100;
   outline: 0;
   background-color: #101010;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
