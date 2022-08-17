@@ -2100,7 +2100,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 }
 .modal > pre,
 .modal > textarea {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-size-adjust: 0.35;
   overflow: auto;
   margin-bottom: 0.5em;
