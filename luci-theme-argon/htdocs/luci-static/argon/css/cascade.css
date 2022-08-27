@@ -2875,6 +2875,9 @@ pre.command-output {
     top: -12px;
   }
 }
+.modal.uci-dialog li {
+    color: #fff !important;
+}
 @media screen and (max-width: 1600px) {
   header > .fill > .container > #logo {
     margin: 0 2.5rem 0 0.5rem;
