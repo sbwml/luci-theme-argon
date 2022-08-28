@@ -3246,7 +3246,7 @@ pre.command-output {
     display: table-cell !important;
   }
   .modal.cbi-modal {
-    max-width: 100%;
+    max-width: 95%;
     max-height: none;
   }
   .modal {
