@@ -2088,7 +2088,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   min-height: 32px;
   margin: 5em auto;
   padding: 1em;
-  border-radius: 3px !important;
+  border-radius: 15px !important;
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
 }
@@ -3255,11 +3255,11 @@ pre.command-output {
     flex-wrap: wrap;
     width: 100%;
     min-width: 270px;
-    max-width: 600px;
+    max-width: 95%;
     min-height: 32px;
     margin: 5em auto;
     padding: 1em;
-    border-radius: 3px !important;
+    border-radius: 15px !important;
     background: #fff;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
   }
