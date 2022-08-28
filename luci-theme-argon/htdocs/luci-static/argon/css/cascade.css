@@ -2088,7 +2088,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   min-height: 32px;
   margin: 5em auto;
   padding: 1em;
-  border-radius: 15px !important;
+  border-radius: 10px !important;
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
 }
@@ -2120,7 +2120,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 }
 .modal li {
   list-style-type: square;
-  color: #808080;
+  /* color: #808080; */
 }
 .modal p {
   word-break: break-word;
@@ -2874,9 +2874,6 @@ pre.command-output {
   .showSide::before {
     top: -12px;
   }
-}
-.modal.uci-dialog li {
-    color: #fff !important;
 }
 @media screen and (max-width: 1600px) {
   header > .fill > .container > #logo {
