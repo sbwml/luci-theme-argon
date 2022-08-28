@@ -727,7 +727,10 @@ div[style="width:100%;height:300px;border:1px solid #000;background:#fff"] {
   background-color: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
   text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
-  margin: 0 1.25rem 1rem 1.25rem;
+  margin: 0 0 1em 0;
+}
+.alert-message.fade-in.warning {
+  margin: 1.2rem !important;
 }
 .alert.error,
 .alert-message.error {
