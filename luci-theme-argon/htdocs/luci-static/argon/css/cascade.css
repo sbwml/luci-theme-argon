@@ -2979,7 +2979,7 @@ pre.command-output {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 1152px) {
+@media screen and (max-width: 1280px) {
   header > .fill > .container > #logo {
     display: none;
   }
