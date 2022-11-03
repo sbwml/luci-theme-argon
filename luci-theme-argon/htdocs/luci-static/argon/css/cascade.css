@@ -97,6 +97,9 @@ body {
   color: #32325d;
   color: var(--gray-dark);
 }
+span {
+  cursor: pointer;
+}
 * {
   margin: 0;
   padding: 0;
