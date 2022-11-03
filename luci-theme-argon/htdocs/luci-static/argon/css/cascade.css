@@ -2835,6 +2835,7 @@ input[type="checkbox"] {
   transition: all 0.2s;
   margin: 0 auto;
   margin-bottom: -3px;
+  margin-right: 3px;
 }
 input[type="checkbox"]:checked {
   border: 1px solid #5e72e4;
