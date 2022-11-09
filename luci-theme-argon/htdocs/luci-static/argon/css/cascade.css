@@ -2677,7 +2677,7 @@ input[name="nslookup"] {
   color: #525f7f;
 }
 [data-page="admin-system-flash"] .modal label > input[type="checkbox"] {
-  top: -0.35rem;
+  /* top: -0.35rem; */
 }
 [data-page="admin-system-flash"] .modal .btn {
   white-space: normal !important;
