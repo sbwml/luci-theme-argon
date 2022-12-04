@@ -1806,7 +1806,6 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   border-bottom-left-radius: 0;
 }
 .cbi-dynlist > .item > span {
-  white-space: normal;
   word-break: break-word;
   line-height: 1.5rem;
   padding: 0.5rem 0.5rem;
@@ -1820,7 +1819,18 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   display: block;
   transition: box-shadow 0.15s ease;
   box-sizing: border-box;
-  min-width: 15rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (max-width: 1366px) {
+  .cbi-dynlist > .item > span {
+    max-width: 16rem;
+}
+}
+@media screen and (min-width: 1366px) {
+  .cbi-dynlist > .item > span {
+    max-width: 18rem;
+  }
 }
 .cbi-dynlist > .add-item {
   display: inline-flex;
@@ -1967,7 +1977,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   display: block;
   width: auto;
   min-width: 100%;
-  max-width: none;
+  /* max-width: none; */
   max-height: 200px !important;
   border: 0 solid #918e8c;
   background: #ffffff;
@@ -1977,6 +1987,18 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   color: var(--main-menu-color);
   margin-left: -0.2rem !important;
 }
+
+@media screen and (max-width: 1366px) {
+  .cbi-dropdown[open] > ul.dropdown {
+    max-width: 16rem;
+}
+}
+@media screen and (min-width: 1366px) {
+  .cbi-dropdown[open] > ul.dropdown {
+    max-width: 18rem;
+  }
+}
+
 .cbi-dropdown[open] > ul.dropdown li {
   color: #000;
 }
