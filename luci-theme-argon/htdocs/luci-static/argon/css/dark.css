@@ -642,6 +642,11 @@ textarea {
   color: #cccccc;
 }
 
+.cbi-section .cbi-section-remove:nth-of-type(2n),
+.container > .cbi-section .cbi-section-node:nth-of-type(2n) {
+  background-color: #1e1e1e;
+}
+
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .login-page .login-container .login-form {
     -webkit-backdrop-filter: blur(var(--blur-radius-dark));
