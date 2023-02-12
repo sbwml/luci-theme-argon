@@ -41,8 +41,8 @@ msgstr "[暗色模式] 主色调"
 msgid "A HEX Color ; ( Default: #5e72e4 )"
 msgstr "十六进制颜色值 ( 预设为：#5e72e4 )"
 
-msgid "A HEX Color ; ( Default: #483d8b )"
-msgstr "十六进制颜色值 ( 预设为：#483d8b )"
+msgid "A HEX Color ; ( Default: #3600a8 )"
+msgstr "十六进制颜色值 ( 预设为：#3600a8 )"
 
 msgid "[Light mode] Transparency"
 msgstr "[亮色模式] 透明度"
