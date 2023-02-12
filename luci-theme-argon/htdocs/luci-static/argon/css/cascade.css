@@ -2377,6 +2377,7 @@ td > .ifacebadge,
 .ifacebox-head {
   padding: 0.25em;
   background: #eee;
+  border-radius: 5px 5px 0px 0px;
 }
 .ifacebox-head.active {
   background: #5e72e4;
@@ -2390,6 +2391,7 @@ td > .ifacebadge,
 .ifacebox-body {
   padding: 0.5em 1rem;
   line-height: 1.6em;
+  border-radius: 0px 0px 5px 5px;
 }
 .cbi-image-button {
   margin-left: 0.5rem;
