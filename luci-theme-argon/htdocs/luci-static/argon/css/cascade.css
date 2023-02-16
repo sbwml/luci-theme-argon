@@ -1746,6 +1746,11 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   text-align: right !important;
   vertical-align: middle;
 }
+@media screen and (min-width: 1280px) {
+  .td.cbi-section-actions {
+    text-align: center !important;
+  }
+}
 .td.cbi-section-actions > * {
   display: inline-flex;
 }
