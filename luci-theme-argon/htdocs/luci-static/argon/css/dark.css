@@ -27,11 +27,11 @@
  *  Licensed to the public under the Apache License 2.0
  */
 body {
-  background: #06070a;
+  background: #444950;
   color: #cccccc;
 }
 .login-page .login-container .login-form {
-  background-color: #06070a;
+  background-color: #444950;
 }
 .login-page .login-container .login-form .brand {
   color: #adb5bd;
@@ -58,10 +58,10 @@ body {
   opacity: 0.9;
 }
 header::after {
-  background-color: #06070a !important;
+  background-color: #444950 !important;
 }
 .main .main-left {
-  background-color: #06070a !important;
+  background-color: #444950 !important;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
 }
 .main .main-left .sidenav-header .brand {
@@ -108,17 +108,21 @@ header::after {
 	box-shadow:inset 0 0 0 5px #363636;
 }
 .main .main-right {
-  background-color: #06070a;
+  background-color: #444950;
   background-attachment: fixed;
 }
 h2 {
   color: #ccc;
-  background: #0a0f17;
+  background: #2c323c;
+  border-radius: 11px;
 }
 h3 {
   color: #ccc;
   border-bottom: 0;
-  background: #0a0f17;
+  background: #2c323c;
+}
+h4 {
+  color: #808dad;
 }
 a:-webkit-any-link {
   color: -webkit-link;
@@ -142,7 +146,7 @@ input:-webkit-autofill {
   color: #ccc;
 }
 header.bg-primary {
-  background-color: #06070a !important;
+  background-color: #444950 !important;
 }
 .cbi-map-descr {
   color: #ccc;
@@ -153,12 +157,12 @@ header.bg-primary {
 }
 .panel-title {
   color: #ccc;
-  background-color: #0a0f17;
+  background-color: #444950;
   border-bottom: 0px;
 }
 div > table > tbody > tr:nth-of-type(2n),
 div > .table > .tr:nth-of-type(2n) {
-  background-color: #0a0f17;
+  background-color: #2c323c;
 }
 table > tbody > tr > td,
 table > tfoot > tr > td,
@@ -166,12 +170,12 @@ table > thead > tr > td {
   color: #ccc;
 }
 fieldset > table > tbody > tr:nth-of-type(2n) {
-  background-color: #0a0f17;
+  background-color: #2c323c;
 }
 table > tbody > tr > td,
 table > tfoot > tr > td,
 table > thead > tr > td {
-  border-top: 1px solid #0a0f17;
+  border-top: 1px solid #2c323c;
 }
 #swaptotal > div > div,
 #swapfree > div > div,
@@ -214,7 +218,7 @@ tr > th,
   border-top: 0;
 }
 .cbi-rowstyle-2 {
-  background-color: #06070a;
+  background-color: #2c323c;
 }
 .cbi-rowstyle-1 {
   background-color: #0a0f17;
@@ -224,14 +228,14 @@ tr > th,
 h3 {
   color: #ccc;
   border-bottom: 0;
-  border-radius: 0.375rem;
+  border-radius: 11px;
 }
 .cbi-progressbar {
   position: relative;
   min-width: 170px;
   height: 20px;
   margin: 6px 0;
-  border: thin solid #353535;
+  border: thin solid #5c5c5c;
   background: transparent;
   border-radius: 0.2rem;
   overflow: hidden;
@@ -265,17 +269,17 @@ div > .table > .tbody > .tr:nth-of-type(2n) {
 }
 #syslog {
   color: #ccc;
-  background-color: #0a0f17;
+  background-color: #2c323c;
 }
 #iwsvg,
 #iwsvg2,
 #bwsvg {
   overflow: hidden;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.35);
-  background-color: #06070a !important;
+  background-color: #444950 !important;
 }
 .tabs {
-  background-color: #0a0f17;
+  background-color: #2c323c;
 }
 .tabs > li[class~="active"] > a {
   color: #ccc;
@@ -285,7 +289,7 @@ div > .table > .tbody > .tr:nth-of-type(2n) {
   border-bottom: 0.18751rem solid #483d8b;
   border-bottom: 0.18751rem solid var(--dark-primary);
   color: #ccc;
-  background-color: #181819;
+  background-color: #444950;
 }
 .cbi-tabmenu > li > a,
 .tabs > li > a {
@@ -296,7 +300,7 @@ div > .table > .tbody > .tr:nth-of-type(2n) {
   color: #ccc;
 }
 .cbi-tabmenu > li {
-  background: var(--dark-primary);
+  background: #2c323c;
 }
 .cbi-tabmenu li[class~="cbi-tab"] a {
   color: #ccc;
@@ -306,10 +310,10 @@ div > .table > .tbody > .tr:nth-of-type(2n) {
   background: #2d2d2d;
 }
 .cbi-tabmenu > li[class~="cbi-tab"] {
-  background-color: #181819;
+  background-color: #2c323c;
 }
 .cbi-tabcontainer > .cbi-value:nth-of-type(2n) {
-  background-color: #0a0f17;
+  background-color: #2c323c;
 }
 .cbi-value-title {
   color: #ccc;
@@ -328,7 +332,7 @@ input:focus {
   outline: 0;
 }
 select {
-  background-color: #06070a !important;
+  background-color: #444950 !important;
 }
 #cbi-dropbear h2,
 #cbi-dropbear .cbi-map-descr,
@@ -350,12 +354,12 @@ select {
   color: #ccc;
 }
 .cbi-input-textarea {
-  background-color: #06070a;
+  background-color: #444950;
   color: #ccc;
 }
 .cbi-section-remove:nth-of-type(2n),
 .cbi-section-node:nth-of-type(2n) {
-  background-color: #06070a;
+  background-color: #444950;
 }
 .node-system-packages > .main table tr td:nth-last-child(1) {
   color: #ccc;
@@ -365,7 +369,7 @@ select {
 }
 .ifacebox {
   background-color: none;
-  border: 1px solid #06070a;
+  border: 1px solid #444950;
   box-shadow: none;
 }
 .ifacebox-head {
@@ -373,7 +377,7 @@ select {
   border-radius: 5px 5px 0px 0px;
 }
 .ifacebox-body {
-  background-color: #0f1218;
+  background-color: #444950;
   border-radius: 0px 0px 5px 5px;
 }
 .zonebadge strong {
@@ -388,7 +392,7 @@ td.cbi-value-field var {
 }
 #diag-rc-output > pre {
   color: #ccc;
-  background-color: #06070a;
+  background-color: #444950;
 }
 .node-services-vssr .block {
   background-color: #3c3c3c !important;
@@ -400,7 +404,7 @@ td.cbi-value-field var {
 .node-services-vssr .status-bar {
   color: #ccc;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.35);
-  background-color: #06070a;
+  background-color: #444950;
 }
 .node-services-vssr .cbi-section-table-row {
   color: #ccc;
@@ -416,7 +420,7 @@ td.cbi-value-field var {
   color: #ccc;
 }
 .node-services-vssr .incon:nth-child(2) {
-  border-right: #06070a 1px solid;
+  border-right: #444950 1px solid;
 }
 #xhr_poll_status > .label.success {
   color: #ccc !important;
@@ -478,7 +482,7 @@ fieldset[id^="cbi-apply-"] {
 }
 header .fill .status span[data-style="active"] {
   color: #ccc !important;
-  background-color: #333333 !important;
+  background-color: #2c323c !important;
 }
 #cbi-wireless .td,
 #cbi-network .tr:first-child > .td,
@@ -486,14 +490,14 @@ header .fill .status span[data-style="active"] {
 [data-page="admin-network-diagnostics"] .tr > .td,
 .tr.table-titles > .th,
 .tr.cbi-section-table-titles > .th {
-  background-color: #06070a;
+  background-color: #2c323c;
   /* border-bottom: black 1px solid !important; */
 }
 .network-status-table .ifacebox-body .ifacebadge {
-  background-color: #0a0f17;
+  background-color: #2c323c;
   border-bottom: 0;
   box-shadow: none;
-  border-radius: 0.375rem;
+  border-radius: 11px;
 }
 td > .ifacebadge,
 .td > .ifacebadge {
@@ -523,8 +527,9 @@ td > .ifacebadge,
 [data-tab-title],
 [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear),
 [data-page="admin-system-opkg"] #maincontent > .container {
-  background: #06070a !important;
+  background: #2c323c !important;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.35);
+  border-radius: 11px;
 }
 div[style="width:100%;height:300px;border:1px solid #000;background:#fff"] {
   background: transparent !important;
@@ -564,10 +569,10 @@ input,
   color: #ccc;
 }
 .cbi-section-table-row {
-  background-color: #06070a !important;
+  background-color: #444950 !important;
 }
 .modal {
-  background-color: #313746;
+  background-color: #2c323c;
 }
 .cbi-button-positive {
   color: #fff !important;
@@ -584,7 +589,7 @@ input,
   border-color: var(--dark-primary) !important;
 }
 .cbi-dropdown[open] > ul.dropdown {
-  background: #0a0f17 !important;
+  background: #2c323c !important;
   color: #ccc !important;
   box-shadow: none;
   border: 1px solid #3c3c3c !important;
@@ -604,7 +609,7 @@ input,
   outline: none;
 }
 .ifacebadge {
-  background-color: #333333;
+  background-color: #444950;
 }
 .cbi-dynlist > .item > span {
   border: 1px solid #3c3c3c !important;
@@ -645,12 +650,18 @@ input,
 }
 
 textarea {
-  background-color: #06070a;
+  background-color: #444950;
   color: #cccccc;
 }
 
 code {
   background: #4e9150;
+}
+
+.modal > pre,
+.modal > textarea {
+  color: #ffc100;
+  background-color: #2c323c;
 }
 
 .alert-message.fade-in {
@@ -659,7 +670,15 @@ code {
 
 .cbi-section .cbi-section-remove:nth-of-type(2n),
 .container > .cbi-section .cbi-section-node:nth-of-type(2n) {
-  background-color: #06070a;
+  background-color: #444950;
+}
+
+.main .main-left .nav li.slide .slide-menu .active::after {
+  background-color: var(--dark-primary) !important;
+}
+
+tr.cbi-section-table-row {
+    background-color: #2c323c !important;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -671,7 +690,7 @@ code {
 }
 @media screen and (max-width: 480px) {
   .node-status-iptables > .main div > .cbi-map > form {
-    background-color: #06070a;
+    background-color: #444950;
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.35);
   }
 }
