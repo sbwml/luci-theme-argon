@@ -82,7 +82,7 @@ o.default = blur_radius
 o.datatype = ufloat
 o.rmempty = false
 
-o = s:option(Value, 'dark_primary', translate('[Dark mode] Primary Color'), translate('A HEX Color ; ( Default: #3600a8 )'))
+o = s:option(Value, 'dark_primary', translate('[Dark mode] Primary Color'), translate('A HEX Color ; ( Default: #5e72e4 )'))
 o.default = dark_primary
 o.datatype = ufloat
 o.rmempty = false
