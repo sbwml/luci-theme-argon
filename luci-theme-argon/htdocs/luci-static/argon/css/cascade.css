@@ -313,8 +313,13 @@ hr {
   overflow: hidden;
 }
 .login-page .video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  height: 100%;
   width: 100%;
-  height: auto;
 }
 .login-page .volume-control {
   position: fixed;
