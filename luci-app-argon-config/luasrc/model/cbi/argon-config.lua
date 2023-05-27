@@ -207,10 +207,4 @@ btnrm.write = function(self, section)
     return v
 end
 
-function IsIpkFile(name)
-    name = name or ''
-    local ext = string.lower(string.sub(name, -4, -1))
-    return ext == '.ipk'
-end
-
 return br, ful, form
