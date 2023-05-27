@@ -139,7 +139,7 @@ http.setfilehandler(
             end
 
             if not fd then
-                um.value = translate('Create upload file error.')
+                um.value = translate('Create upload file error')
                 return
             end
         end
@@ -157,7 +157,7 @@ http.setfilehandler(
 if http.formvalue('upload') then
     local f = http.formvalue('ulfile')
     if #f <= 0 then
-        um.value = translate('No specify upload file.')
+        um.value = translate('No specify upload file')
     end
 end
 

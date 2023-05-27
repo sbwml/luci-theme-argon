@@ -22,25 +22,6 @@ define Package/luci-app-argon-config
 	DEPENDS:=+luci-compat
 endef
 
-define Build/Prepare
-endef
-
-define Build/Compile
-endef
-
-
-define Package/luci-app-argon-config/install
-	$(INSTALL_DIR) $(1)/usr/lib/lua/luci
-	cp -pR ./luasrc/* $(1)/usr/lib/lua/luci
-	$(INSTALL_DIR) $(1)/
-	cp -pR ./root/* $(1)/
-	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
-	po2lmo ./po/zh-cn/argon-config.po $(1)/usr/lib/lua/luci/i18n/argon-config.zh-cn.lmo
-endef
-
-
 $(eval $(call BuildPackage,luci-app-argon-config))
 
 # call BuildPackage - OpenWrt buildroot signature
-
-
