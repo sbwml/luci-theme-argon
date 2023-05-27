@@ -2321,7 +2321,7 @@ td>table>tbody>tr>td,
   font-weight: bold;
   display: none;
   color: #777;
-  text-shadow: 1px 1px 0 #fff
+  /* text-shadow: 1px 1px 0 #fff; */
 }
 
 .cbi-dropdown>ul>li {
