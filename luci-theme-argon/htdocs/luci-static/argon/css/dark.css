@@ -838,3 +838,7 @@ tr.cbi-section-table-row {
 .uci-change-list var del {
   color: #3c3c3c;
 }
+
+#view>.spinning {
+    background: #2c323c;
+}
