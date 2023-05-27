@@ -1687,7 +1687,6 @@ td>table>tbody>tr>td,
 }
 
 .btn.primary,
-.cbi-button,
 .cbi-page-actions .cbi-button-save,
 .cbi-page-actions .cbi-button-apply+.cbi-button-save,
 .cbi-button-add,
@@ -1706,7 +1705,6 @@ td>table>tbody>tr>td,
   background-color: var(--primary)
 }
 
-.cbi-button,
 .cbi-page-actions .cbi-button-apply,
 .cbi-section-actions .cbi-button-edit,
 .cbi-button-edit,
@@ -1724,6 +1722,12 @@ td>table>tbody>tr>td,
   background-color: #5e72e4;
   background-color: var(--primary);
   cursor: pointer;
+}
+
+.cbi-input-remove {
+  color: #fff !important;
+  background-color: #5e72e4;
+  background-color: var(--primary);
 }
 
 .btn.danger,
@@ -2076,19 +2080,6 @@ td>table>tbody>tr>td,
   white-space: normal;
   word-wrap: break-word;
 }
-
-/* .cbi-rowstyle-1 {
-  background-color: #f9f9f9;
-}
-.cbi-rowstyle-2 {
-  background-color: #eee;
-} */
-
-/* .cbi-rowstyle-2 .cbi-button-up,
-.cbi-rowstyle-2 .cbi-button-down,
-body:not(.Interfaces) .cbi-rowstyle-2:first-child {
-  background-color: #fff !important;
-} */
 
 .cbi-section-table .cbi-section-table-titles .cbi-section-table-cell {
   width: auto !important
