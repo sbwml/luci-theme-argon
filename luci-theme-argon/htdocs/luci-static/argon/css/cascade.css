@@ -1851,12 +1851,13 @@ td > table > tbody > tr > td,
 }
 
 .cbi-value-title {
-    display: table-cell;
-    float: left;
-    width: 23rem;
-    padding-right: 2rem;
-    text-align: right;
-    word-wrap: break-word
+  display: table-cell;
+  /*float: left;*/
+  width: 23rem;
+  padding-top: 0.25rem;
+  padding-right: 2rem;
+  text-align: right;
+  word-wrap: break-word;
 }
 
 .cbi-value {
