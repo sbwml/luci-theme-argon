@@ -1848,11 +1848,13 @@ td > table > tbody > tr > td,
 .cbi-value input[type="password"] {
   min-width: 18rem;
 }
+.cbi-value input[type="text"],
 .cbi-value input[type="password"] {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   margin-right: 0;
 }
+.cbi-value input[type="text"] + .cbi-button-neutral,
 .cbi-value input[type="password"] + .cbi-button-neutral {
   height: 42px;
   border-bottom-left-radius: 0;
@@ -1860,7 +1862,6 @@ td > table > tbody > tr > td,
   margin-left: 0;
   border: 0;
 }
-
 #cbi-firewall-zone .cbi-input-select,#cbi-network-switch_vlan .cbi-input-select {
     min-width: 11rem
 }
@@ -3373,18 +3374,6 @@ pre.command-output {
   .cbi-value-title {
     width: 12rem;
     padding-right: 1rem;
-  }
-  .cbi-value-field .cbi-dropdown,
-  .cbi-value-field .cbi-input-select,
-  .cbi-value input[type="text"] {
-    width: 16rem;
-    min-width: 16rem;
-  }
-  /*.cbi-value input[type="password"],*/
-  .cbi-value input[name^="pw"],
-  .cbi-value input[data-update="change"]:nth-child(2) {
-    width: 13rem !important;
-    min-width: 13rem;
   }
   #diag-rc-output > pre,
   #command-rc-output > pre,
