@@ -1724,6 +1724,7 @@ td>table>tbody>tr>td,
   cursor: pointer;
 }
 
+.cbi-input-apply,
 .cbi-input-remove {
   color: #fff !important;
   background-color: #5e72e4;
