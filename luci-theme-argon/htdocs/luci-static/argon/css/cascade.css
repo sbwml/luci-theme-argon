@@ -1687,6 +1687,7 @@ td>table>tbody>tr>td,
 }
 
 .btn.primary,
+.cbi-button,
 .cbi-page-actions .cbi-button-save,
 .cbi-page-actions .cbi-button-apply+.cbi-button-save,
 .cbi-button-add,
@@ -1705,6 +1706,7 @@ td>table>tbody>tr>td,
   background-color: var(--primary)
 }
 
+.cbi-button,
 .cbi-page-actions .cbi-button-apply,
 .cbi-section-actions .cbi-button-edit,
 .cbi-button-edit,
