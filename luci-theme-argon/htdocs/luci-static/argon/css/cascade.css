@@ -1600,7 +1600,8 @@ td > table > tbody > tr > td,
     border: thin solid #5e72e4;
     border: thin solid var(--primary);
     background-color: #5e72e4;
-    background-color: var(--primary)
+    background-color: var(--primary);
+    cursor: pointer;
 }
 
 .btn.danger,.cbi-section-remove>.cbi-button,.cbi-button-remove,.cbi-button-reset,.cbi-button-negative,.cbi-button[value="Stop"],.cbi-button[value="Kill"],.cbi-button[onclick="reboot(this)"],.cbi-button-neutral[value="Restart"] {
