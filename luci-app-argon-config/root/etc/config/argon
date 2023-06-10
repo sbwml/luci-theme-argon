@@ -6,3 +6,4 @@ config global
 	option transparency '0.2'
 	option transparency_dark '0.2'
 	option mode 'normal'
+
