@@ -1525,7 +1525,7 @@ tr>th,
 .tr.table-titles>.th,
 .tr.cbi-section-table-titles>.th {
   border-top: 0 !important;
-  background-color: #f6f9fc;
+  background-color: #fff0;
   padding: 1.1em 1.5rem;
   line-height: 1.3rem;
 }
