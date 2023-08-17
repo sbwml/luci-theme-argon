@@ -849,9 +849,11 @@ tr.cbi-section-table-row {
 }
 
 @media screen and (max-width: 1280px) {
-    .tr[data-title]::before, .tr.cbi-section-table-titles.named::before {
-        background: #0000;
-    }
+
+  .tr[data-title]::before,
+  .tr.cbi-section-table-titles.named::before {
+    background: #0000;
+  }
 }
 
 .uci-change-list var ins,
@@ -860,5 +862,29 @@ tr.cbi-section-table-row {
 }
 
 #view>.spinning {
-    background: #2c323c;
+  background: #2c323c;
+}
+
+.cbi-rowstyle-2 {
+  background-color: #0000;
+}
+
+.cbi-section-remove:nth-of-type(2n),
+.cbi-section-node:nth-of-type(2n) {
+  background-color: #0000;
+}
+
+div>table>tbody>tr:nth-of-type(2n),
+div>.table>.tbody>.tr:nth-of-type(2n) {
+  background-color: #0000;
+}
+
+#cbi-wireless .td,
+#cbi-network .tr:first-child>.td,
+.table[width="100%"]>.tr:first-child>.td,
+[data-page="admin-network-diagnostics"] .tr>.td,
+.tr.table-titles>.th,
+.tr.cbi-section-table-titles>.th {
+  background-color: #0000;
+  /* border-bottom: black 1px solid !important; */
 }
