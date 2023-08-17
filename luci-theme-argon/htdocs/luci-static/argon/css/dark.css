@@ -208,6 +208,7 @@ table>thead>tr>td {
 
 fieldset>table>tbody>tr:nth-of-type(2n) {
   background-color: #2c323c;
+  border-radius: 11px;
 }
 
 table>tbody>tr>td,
