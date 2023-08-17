@@ -197,7 +197,7 @@ header.bg-primary {
 
 div>table>tbody>tr:nth-of-type(2n),
 div>.table>.tr:nth-of-type(2n) {
-  background-color: #2c323c;
+  background-color: #0000;
 }
 
 table>tbody>tr>td,
