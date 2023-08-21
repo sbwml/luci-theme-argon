@@ -1470,6 +1470,8 @@ table {
 
 table,
 .table {
+  background-color: #ffffff;
+  border-radius: 0.575rem;
   overflow-y: hidden;
   width: 100%;
   font-size: 95%;
@@ -1592,10 +1594,11 @@ td>table>tbody>tr>td,
   white-space: nowrap;
   text-decoration: none;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.87);
+  color: #fff !important;
   border: 0;
   border-radius: 0.375rem;
-  background-color: #f0f0f0;
+  background-color: #5e72e4;
+  background-color: var(--primary);
   background-image: none;
   -webkit-appearance: none;
   -ms-touch-action: manipulation;
@@ -3579,6 +3582,10 @@ pre.command-output {
 
   .node-admin-status>.main fieldset li>a {
     padding: 0.3rem 0.6rem;
+  }
+
+  textarea#log_textarea {
+    max-height: 485px;
   }
 }
 
