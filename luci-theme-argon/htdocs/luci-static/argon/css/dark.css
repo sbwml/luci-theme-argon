@@ -902,3 +902,9 @@ table,
   background-color: #2c323c;
   border-radius: 0.575rem;
 }
+
+.cbi-section .cbi-section-remove:nth-of-type(2n),
+.container>.cbi-section .cbi-section-node:nth-of-type(2n) {
+  background-color: #2c323c;
+  border-radius: 0 0 0.575 0.575rem;
+}
