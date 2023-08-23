@@ -49,6 +49,14 @@ return view.extend({
 		s.addremove = false;
 		s.anonymous = true;
 
+		o = s.option(form.ListValue, 'online_wallpaper', _('Wallpaper source'));
+		o.value('none', _('Built-in'));
+		o.value('bing', _('Bing'));
+		o.value('unsplash', _('Unsplash'));
+		o.value('wallhaven', _('Wallhaven'));
+		o.default = 'bing';
+		o.rmempty = false;
+
 		o = s.option(form.ListValue, 'mode', _('Theme mode'));
 		o.value('normal', _('Follow system'));
 		o.value('light', _('Light mode'));
