@@ -4116,3 +4116,79 @@ pre.command-output {
 .cbi-section-descr h2 {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
+
+@media screen and (max-width: 600px) {
+  .cbi-checkbox {
+    display: inline-block;
+    margin-right: 0px;
+    flex-basis: 31%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .cbi-checkbox {
+    display: inline-block;
+    margin-right: 10px;
+    flex-basis: 28%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  .cbi-checkbox {
+    display: inline-block;
+    margin-right: 5px;
+    flex-basis: 20%;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+  .cbi-checkbox {
+    display: inline-block;
+    margin-right: 5px;
+    flex-basis: 15%;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .cbi-checkbox {
+    display: inline-block;
+    margin-right: 5px;
+    flex-basis: 14%;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
+  .cbi-checkbox {
+    display: inline-block;
+    margin-right: 5px;
+    flex-basis: 13%;
+  }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1500px) {
+  .cbi-checkbox {
+    display: inline-block;
+    margin-right: 5px;
+    flex-basis: 12%;
+  }
+}
+
+@media screen and (min-width: 1501px) {
+  .cbi-checkbox {
+    display: inline-block;
+    margin-right: 5px;
+    flex-basis: 10%;
+  }
+}
+
+div#cbid\.appfilter\.appfilter\.websiteapps,
+div#cbid\.appfilter\.appfilter\.downloadapps,
+div#cbid\.appfilter\.appfilter\.employeeapps,
+div#cbid\.appfilter\.appfilter\.musicapps,
+div#cbid\.appfilter\.appfilter\.shoppingapps,
+div#cbid\.appfilter\.appfilter\.videoapps,
+div#cbid\.appfilter\.appfilter\.gameapps,
+div#cbid\.appfilter\.appfilter\.chatapps {
+  display: flex;
+  flex-wrap: wrap;
+}
