@@ -248,13 +248,6 @@ table>thead>tr>td {
   background-color: #32325d !important;
 }
 
-table>tbody>tr>th,
-table>tfoot>tr>th,
-table>thead>tr>th {
-  background-color: #0a0f17;
-  border-bottom: black 1px solid !important;
-}
-
 tr>td,
 tr>th,
 .tr>.td,
