@@ -1479,7 +1479,7 @@ table,
   overflow-y: hidden;
   width: 100%;
   font-size: 95%;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0.175rem;
 }
 
