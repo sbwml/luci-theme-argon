@@ -3671,7 +3671,7 @@ pre.command-output {
   .cbi-value-field .cbi-input-select,
   .cbi-value input[type="text"],
   .cbi-value input[type="password"] {
-    min-width: 18rem;
+    min-width: 16rem;
   }
 
   #cbi-firewall-zone .cbi-input-select {
