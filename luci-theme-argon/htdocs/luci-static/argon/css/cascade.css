@@ -4216,3 +4216,7 @@ div#cbid\.appfilter\.appfilter\.chatapps {
   display: flex;
   flex-wrap: wrap;
 }
+
+.CodeMirror.cm-s-dracula.CodeMirror-wrap {
+  border-radius: 0.375rem;
+}
