@@ -120,6 +120,12 @@ span {
   color: var(--white);
 }
 
+::placeholder {
+  color: #8898aa;
+  color: var(--gray);
+  font-style: italic;
+}
+
 a:link,
 a:visited,
 a:active {
