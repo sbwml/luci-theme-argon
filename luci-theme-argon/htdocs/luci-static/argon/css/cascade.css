@@ -3671,7 +3671,7 @@ pre.command-output {
   .cbi-value-field .cbi-input-select,
   .cbi-value input[type="text"],
   .cbi-value input[type="password"] {
-    min-width: 16rem;
+    min-width: 18rem;
   }
 
   #cbi-firewall-zone .cbi-input-select {
@@ -4070,7 +4070,7 @@ pre.command-output {
 @media screen and (min-width: 600px) {
   ::-webkit-scrollbar {
     width: 6px;
-    height: 10px;
+    height: 5px;
   }
 
   ::-webkit-scrollbar,
