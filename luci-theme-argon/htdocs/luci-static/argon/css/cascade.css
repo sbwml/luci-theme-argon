@@ -3659,7 +3659,7 @@ pre.command-output {
   }
 
   table {
-    font-size: 0.78rem !important;
+    font-size: 0.835rem !important;
     width: 100% !important;
   }
 
@@ -3687,7 +3687,7 @@ pre.command-output {
   }
 
   .main>.main-left>.nav>.slide>.slide-menu>li>a {
-    font-size: 0.7rem;
+    font-size: 0.875rem;
   }
 
   #modal_overlay {
