@@ -4125,7 +4125,7 @@ pre.command-output {
 }
 
 @media screen and (max-width: 600px) {
-  .cbi-checkbox {
+  #cbi-appfilter-appfilter .cbi-checkbox {
     display: inline-block;
     margin-right: 0px;
     flex-basis: 31%;
@@ -4133,7 +4133,7 @@ pre.command-output {
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
-  .cbi-checkbox {
+  #cbi-appfilter-appfilter .cbi-checkbox {
     display: inline-block;
     margin-right: 10px;
     flex-basis: 28%;
@@ -4141,7 +4141,7 @@ pre.command-output {
 }
 
 @media screen and (min-width: 901px) and (max-width: 1100px) {
-  .cbi-checkbox {
+  #cbi-appfilter-appfilter .cbi-checkbox {
     display: inline-block;
     margin-right: 5px;
     flex-basis: 20%;
@@ -4149,7 +4149,7 @@ pre.command-output {
 }
 
 @media screen and (min-width: 1101px) and (max-width: 1200px) {
-  .cbi-checkbox {
+  #cbi-appfilter-appfilter .cbi-checkbox {
     display: inline-block;
     margin-right: 5px;
     flex-basis: 15%;
@@ -4157,7 +4157,7 @@ pre.command-output {
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1300px) {
-  .cbi-checkbox {
+  #cbi-appfilter-appfilter .cbi-checkbox {
     display: inline-block;
     margin-right: 5px;
     flex-basis: 14%;
@@ -4165,7 +4165,7 @@ pre.command-output {
 }
 
 @media screen and (min-width: 1301px) and (max-width: 1400px) {
-  .cbi-checkbox {
+  #cbi-appfilter-appfilter .cbi-checkbox {
     display: inline-block;
     margin-right: 5px;
     flex-basis: 13%;
@@ -4173,7 +4173,7 @@ pre.command-output {
 }
 
 @media screen and (min-width: 1401px) and (max-width: 1500px) {
-  .cbi-checkbox {
+  #cbi-appfilter-appfilter .cbi-checkbox {
     display: inline-block;
     margin-right: 5px;
     flex-basis: 12%;
@@ -4181,7 +4181,7 @@ pre.command-output {
 }
 
 @media screen and (min-width: 1501px) {
-  .cbi-checkbox {
+  #cbi-appfilter-appfilter .cbi-checkbox {
     display: inline-block;
     margin-right: 5px;
     flex-basis: 10%;
