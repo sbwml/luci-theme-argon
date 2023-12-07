@@ -2082,6 +2082,11 @@ td>table>tbody>tr>td,
   display: none;
 }
 
+.td[data-title][title]::before {
+  display: initial;
+  font-weight: normal;
+}
+
 .tr[data-title]::before,
 .tr.cbi-section-table-titles.named::before {
   font-weight: bold;
