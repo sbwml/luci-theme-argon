@@ -3347,6 +3347,10 @@ input[name="nslookup"] {
   white-space: normal !important;
 }
 
+[data-page="admin-system-flash"] .modal label.btn {
+  background-color: #413d3c;
+}
+
 /* wireless overview */
 #cbi-wireless>#wifi_assoclist_table>.tr {
   box-shadow: inset 1px -1px 0 #ddd, inset -1px -1px 0 #ddd;
