@@ -901,7 +901,8 @@ div[style="width:100%;height:300px;border:1px solid #000;background:#fff"] {
 }
 
 .warning {
-  background-color: #f0e68c !important
+  background-color: #fcef7c !important;
+  color: #797979;
 }
 
 .success {
@@ -3168,17 +3169,20 @@ label[data-index][data-depends] {
 #diag-rc-output>pre,
 #command-rc-output>pre,
 [data-page="admin-services-wol"] .notice code {
-  font-size: 1.2rem;
-  font-size-adjust: .35;
+  font-size: 15px;
+  font-family: auto;
   line-height: normal;
   display: block;
-  overflow-y: hidden;
+  overflow-y: auto;
   width: 100%;
+  max-height: 480px;
   padding: 8.5px;
   white-space: pre;
-  color: #eee;
+  color: #FFC107;
   background-color: #101010;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12)
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.375rem;
+  cursor: auto;
 }
 
 [data-page="admin-network-diagnostics"] .table {
@@ -3463,6 +3467,7 @@ input[name="nslookup"] {
   padding: .5rem 1rem;
   border-bottom: thin solid #ccc;
   background: #eee;
+  border-radius: 0.375rem;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05)
 }
 
@@ -3479,23 +3484,24 @@ input[name="nslookup"] {
 }
 
 .commandbox code {
-  position: absolute;
+  /* position: absolute; */
   overflow: hidden;
-  max-width: 60%;
+  /* max-width: 72%; */
   margin-left: 4px;
-  padding: 2px 3px;
+  padding: 10px 3px;
   white-space: nowrap;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
+  border-radius: 0.375rem;
 }
 
 .commandbox code:hover {
   overflow-y: auto;
-  max-height: 50px;
+  max-width: 100%;
   white-space: normal
 }
 
 .commandbox p:first-of-type {
-  margin-top: -6px
+  margin-top: 10px
 }
 
 .commandbox p:nth-of-type(2) {
