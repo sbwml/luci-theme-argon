@@ -1956,7 +1956,7 @@ td>table>tbody>tr>td,
   height: auto;
   opacity: 1;
   transition: opacity .25s ease-in;
-  margin: inherit !important
+  /* margin: inherit !important */
 }
 
 .cbi-section[id] .cbi-section-remove:nth-of-type(4n+3),
@@ -4239,4 +4239,10 @@ div#cbid\.appfilter\.appfilter\.chatapps {
 
 div#service_status {
     padding: 1rem;
+}
+
+/* passwall faq */
+[id^="container.passwall."][id$=".faq"] {
+  margin-left: 10px;
+  margin-right: 10px;
 }
