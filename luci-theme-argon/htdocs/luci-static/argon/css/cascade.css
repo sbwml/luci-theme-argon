@@ -2859,6 +2859,7 @@ td>.ifacebadge,
 
 #syslog {
   font-size: 14px !important;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important;
   line-height: 1.25;
   overflow-y: hidden;
   width: 100%;
