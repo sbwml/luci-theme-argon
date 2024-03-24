@@ -4278,3 +4278,13 @@ div#service_status {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+/* passwall add_link */
+div#add_link_div {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 0px;
+  box-shadow: darkgrey 1px 5px 20px 0px;
+  border-radius: 9px;
+}
