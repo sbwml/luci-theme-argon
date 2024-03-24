@@ -2018,7 +2018,8 @@ td>table>tbody>tr>td,
 .cbi-value-field .cbi-input-select,
 .cbi-value input[type="text"],
 .cbi-value input[type="password"] {
-  min-width: 18rem;
+  min-width: 20rem;
+  max-width: 20rem;
 }
 
 .cbi-value input[type="text"],
@@ -2280,7 +2281,16 @@ td>table>tbody>tr>td,
 .cbi-dropdown {
   position: relative;
   display: inline-flex;
-  min-height: 2.1875rem
+  min-height: 2.1875rem;
+}
+
+[id^="cbid."][id$=".interface"].cbi-dropdown,
+[id^="cbid."][id$=".listen_interfaces"].cbi-dropdown {
+  max-height: 2.569rem;
+}
+
+[id^="cbid.natmap."][id$=".interface"].cbi-dropdown {
+  max-height: unset;
 }
 
 .cbi-dropdown[placeholder*="select"] {
@@ -2370,7 +2380,7 @@ td>table>tbody>tr>td,
 }
 
 .cbi-dropdown[empty]>ul {
-  max-width: 1px
+  max-width: 0px
 }
 
 .cbi-dropdown>ul>li>form {
@@ -2848,7 +2858,7 @@ td>.ifacebadge,
 }
 
 #syslog {
-  font-size: small;
+  font-size: 14px !important;
   line-height: 1.25;
   overflow-y: hidden;
   width: 100%;
@@ -3630,7 +3640,8 @@ pre.command-output {
   .cbi-value-field .cbi-input-select,
   .cbi-value input[type="text"],
   .cbi-value input[type="password"] {
-    min-width: 18rem;
+    min-width: 17rem;
+    max-width: 17rem;
   }
 
   #cbi-firewall-zone .cbi-input-select {
@@ -3686,7 +3697,13 @@ pre.command-output {
   .cbi-value-field .cbi-input-select,
   .cbi-value input[type="text"],
   .cbi-value input[type="password"] {
-    min-width: 16rem;
+    min-width: 17rem;
+    max-width: 17rem;
+    max-height: 2.35rem;
+  }
+
+  [id^="cbid.wolplus."].cbi-dropdown {
+    max-height: unset;
   }
 
   #cbi-firewall-zone .cbi-input-select {
@@ -3767,7 +3784,7 @@ pre.command-output {
   }
 
   .cbi-value-title {
-    width: 12rem;
+    width: 14rem;
     padding-right: 1rem;
   }
 
@@ -3799,6 +3816,10 @@ pre.command-output {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  tr.tr.cbi-section-table-titles.anonymous {
+    min-width: max-content;
   }
 
   .Overview .table[width="100%"]>.tr {
@@ -3853,9 +3874,16 @@ pre.command-output {
   .cbi-section-table-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12); */
+    min-width: max-content;
+  }
+
+  .tr.cbi-section-table-row[id*="wolplus"],
+  .tr.cbi-section-table-row[id*="firewall"] {
+    flex-wrap: wrap;
+    min-width: unset;
   }
 
   .td.cbi-value-field,
@@ -3874,6 +3902,10 @@ pre.command-output {
   .tr.cbi-section-table-titles,
   .tr.cbi-section-table-descr {
     display: none;
+  }
+
+  tr.tr.cbi-section-table-titles.anonymous {
+    display: block;
   }
 
   .tr[data-title]::before,
@@ -4085,7 +4117,7 @@ pre.command-output {
 @media screen and (min-width: 600px) {
   ::-webkit-scrollbar {
     width: 6px;
-    height: 5px;
+    height: 4px;
   }
 
   ::-webkit-scrollbar,
