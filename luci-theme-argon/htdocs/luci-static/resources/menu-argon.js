@@ -2,6 +2,36 @@
 'require baseclass';
 'require ui';
 
+// 获取当前页面的 URL
+var currentUrl = window.location.href;
+
+// 定义正则表达式模式
+var pattern = /\/cgi-bin\/luci\/admin\/status\/logs.*/;
+
+// 检查 URL 是否匹配日志页面
+if (pattern.test(currentUrl)) {
+
+	// 动态注入 overflow-x 和 overflow-y 样式的值为 visible
+	// max-width > 1280px
+	var mainElement = document.querySelector(".main");
+	mainElement.style.overflowY = "visible";
+
+	// max-width <= 1280px
+	var mainRightElement = document.querySelector(".main-right");
+	mainRightElement.style.overflowX = "visible";
+	mainRightElement.style.overflowY = "visible";
+
+	// 延时 500 毫秒执行
+	setTimeout(function() {
+		// 获取页面滚动高度
+		var pageHeight = document.body.scrollHeight;
+
+		// 将 .main-left （左侧菜单）元素的高度设置为当前页面滚动高度
+		var mainLeftElement = document.querySelector(".main-left");
+		mainLeftElement.style.height = pageHeight + "px";
+	}, 500);
+}
+
 return baseclass.extend({
 	__init__: function () {
 		ui.menu.load().then(L.bind(this.render, this));
