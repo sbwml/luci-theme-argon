@@ -1792,13 +1792,6 @@ td>table>tbody>tr>td,
   text-decoration: none
 }
 
-.cbi-value-field .cbi-button-add {
-  font-weight: bold;
-  padding: 1px 6px;
-  display: inline-block;
-  align-items: center
-}
-
 .tabs {
   margin: 0 0 1rem 0;
   padding: 0 1rem;
