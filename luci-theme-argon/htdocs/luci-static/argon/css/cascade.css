@@ -3866,9 +3866,15 @@ pre.command-output {
   .cbi-section-table-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12); */
+  }
+
+  [id*="samba"].cbi-section-table-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     min-width: max-content;
   }
 
