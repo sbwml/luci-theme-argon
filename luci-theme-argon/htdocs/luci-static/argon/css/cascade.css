@@ -1490,6 +1490,13 @@ table,
   border-spacing: 0.175rem;
 }
 
+[id*="smbuser"] table,
+[id*="smbuser"] .table,
+[id*="wolplus"] table,
+[id*="wolplus"] .table {
+  overflow-y: unset;
+}
+
 .table .table-titles th {
   background-color: #e9ecef;
   background-color: var(--lighter);
