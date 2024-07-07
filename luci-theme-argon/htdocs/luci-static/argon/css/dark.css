@@ -794,7 +794,9 @@ textarea {
   color: #cccccc;
 }
 
-#diag-rc-output>pre, #command-rc-output>pre, [data-page="admin-services-wol"] .notice code {
+#diag-rc-output>pre,
+#command-rc-output>pre,
+[data-page="admin-services-wol"] .notice code {
   background-color: #2c323c;
 }
 

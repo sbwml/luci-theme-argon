@@ -2951,6 +2951,61 @@ td>.ifacebadge,
   padding: .5rem
 }
 
+.uci-dialog .cbi-section {
+  padding: .5rem
+}
+
+.uci-dialog .cbi-section .uci-change-legend {
+  line-height: 15px;
+  padding: 10px 20px 0 20px
+}
+
+.uci-dialog .cbi-section .uci-change-legend .uci-change-legend-label {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  float: none;
+  display: inline-block;
+  width: 25%
+}
+
+.uci-dialog .cbi-section .uci-change-legend .uci-change-legend-label>ins,
+.uci-dialog .cbi-section .uci-change-legend .uci-change-legend-label>del {
+  width: 14px;
+  height: 14px
+}
+
+.uci-dialog .cbi-section .uci-change-legend .uci-change-legend-label>var {
+  position: relative;
+  width: 14px;
+  height: 14px
+}
+
+.uci-dialog .cbi-section .uci-change-legend .uci-change-legend-label>var ins,
+.uci-dialog .cbi-section .uci-change-legend .uci-change-legend-label>var del {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  right: 2px;
+  bottom: 2px
+}
+
+.uci-dialog .cbi-section .uci-change-list {
+  overflow: auto
+}
+
+.uci-dialog .cbi-section .uci-change-list+.right .btn {
+  color: #333
+}
+
+.uci-dialog .cbi-section .uci-change-list+.right .cbi-dropdown ul:not(.dropdown) li {
+  color: #fff
+}
+
+.uci-dialog .cbi-section .uci-change-list+.right .cbi-button {
+  padding: .45rem .8rem
+}
+
 #iwsvg,
 #iwsvg2,
 #bwsvg {
@@ -3080,6 +3135,7 @@ span[data-tooltip] .label {
 .cbi-tooltip {
   position: absolute;
   z-index: 1000;
+  top: -1000px;
   left: -1000px;
   padding: 2px 5px;
   transition: opacity .25s ease-out;
@@ -3198,6 +3254,26 @@ label[data-index][data-depends] {
   box-shadow: none
 }
 
+[data-page="admin-network-diagnostics"] .cbi-section {
+  padding: 1rem;
+  font-family: monospace;
+  background: #fff !important
+}
+
+[data-page="admin-network-diagnostics"] textarea {
+  background: transparent;
+  border-radius: .25rem;
+  font-family: 'Google Sans' !important;
+  color: #8898aa;
+  border: 1px solid #dee2e6;
+  padding: .5rem
+}
+
+[data-page="admin-network-diagnostics"] .tr>.td {
+  background-color: #fff !important;
+  border-bottom: 1px solid #dee2e6 !important
+}
+
 input[name="ping"],
 input[name="traceroute"],
 input[name="nslookup"] {
@@ -3209,7 +3285,40 @@ input[name="nslookup"] {
   white-space: normal
 }
 
-[data-page="admin-system-attendedsysupgrade"] .cbi-button {
+div[style*="display:grid;grid-template-columns:repeat"] {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+  font-family: 'Google Sans'
+}
+
+div[style*="display:grid;grid-template-columns:repeat"] .ifacebox {
+  text-align: center;
+  flex-basis: 100px
+}
+
+div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body {
+  font-size: .7rem;
+  padding: .875rem
+}
+
+div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body .cbi-tooltip-container {
+  font-size: inherit !important
+}
+
+@media screen and (max-width:484px) {
+  div[style*="display:grid;grid-template-columns:repeat"] .ifacebox {
+    flex-basis: 80px
+  }
+
+  div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body {
+    padding: .875rem .5rem;
+    font-size: .6rem
+  }
+}
+
+[data-page="admin-system-attendedsysupgrade"] #view .cbi-button {
   margin-left: 0 !important;
   margin-top: 1rem !important
 }
@@ -3218,16 +3327,25 @@ input[name="nslookup"] {
   padding-left: 1.5rem
 }
 
+[data-page="admin-system-reboot"] p>span {
+  position: relative;
+  top: .1rem;
+  left: 1rem
+}
+
 [data-page="admin-system-reboot"] .cbi-button {
   background: #fb6340 !important;
   border-color: #fb6340 !important;
   margin-left: 0 !important
 }
 
-[data-page="admin-system-reboot"] p>span {
-  position: relative;
-  top: .1rem;
-  left: 1rem
+[data-page="admin-system-reboot"] #view>h2:first-child+p {
+  margin-bottom: 1rem
+}
+
+[data-page="admin-system-poweroff"] .container h2+br+p {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem
 }
 
 [data-page="admin-vpn-passwall"] h4 {
@@ -3259,6 +3377,10 @@ input[name="nslookup"] {
   margin-left: 0;
   color: #32325d;
   color: var(--gray-dark);
+}
+
+[data-page="admin-system-admin-sshkeys"] .cbi-dynlist {
+  margin-left: 1rem
 }
 
 /* software */
@@ -3313,12 +3435,65 @@ input[name="nslookup"] {
   margin-top: 0;
 }
 
-/* admin-system-crontab*/
+[data-page="admin-system-system"] .control-group {
+  margin-top: .5rem
+}
+
+[data-page="admin-system-system"] .cbi-dynlist {
+  margin: .25rem 0
+}
+
+[data-page="admin-system-startup"] [data-tab-title] p {
+  margin-left: 0;
+  margin-bottom: 0;
+  position: relative
+}
+
+[data-page="admin-system-startup"] textarea {
+  line-height: 1.25;
+  overflow-y: auto;
+  width: 100%;
+  min-height: 15rem;
+  padding: 1rem;
+  resize: none;
+  color: #8898aa;
+  border-radius: .25rem;
+  border: 1px solid #dee2e6
+}
+
+[data-page="admin-system-startup"] textarea:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--primary)
+}
+
 [data-page="admin-system-crontab"] #view p {
   margin-bottom: 1rem;
 }
 
-/*admin-system-flash*/
+[data-page="admin-system-crontab"] #view p:last-child {
+  margin-bottom: 0
+}
+
+[data-page="admin-system-crontab"] #view p textarea {
+  line-height: 1.25;
+  overflow-y: hidden;
+  width: 100%;
+  min-height: 15rem;
+  padding: 1rem;
+  resize: none;
+  background-color: transparent;
+  background: var(--white);
+  outline: none;
+  color: #8898aa;
+  border-radius: .25rem;
+  border: 1px solid #dee2e6
+}
+
+[data-page="admin-system-attendedsysupgrade-configuration"] .cbi-map .cbi-map-descr {
+  padding-bottom: 0
+}
+
 [data-page="admin-system-flash"] .cbi-value {
   padding: 0;
 }
@@ -3329,6 +3504,11 @@ input[name="nslookup"] {
 
 [data-page="admin-system-flash"] .cbi-map-tabbed {
   border-radius: 0.375rem;
+}
+
+[data-page="admin-system-flash"] .cbi-section-node {
+  padding-top: 0;
+  padding-bottom: .5rem
 }
 
 [data-page="admin-system-flash"] legend {
@@ -3591,6 +3771,87 @@ pre.command-output {
 
 [data-page="admin-status-iptables"] .right {
   margin-bottom: 0 !important;
+}
+
+[data-page="admin-services-ttyd"] .container {
+  display: flex;
+  flex-direction: column
+}
+
+[data-page="admin-services-ttyd"] #view {
+  flex: 1
+}
+
+[data-page="admin-services-ttyd"] #view iframe {
+  height: 100%
+}
+
+[data-page="admin-system-fileassistant"] .fb-container .panel-title {
+  padding: .5rem .75rem !important
+}
+
+[data-page="admin-system-fileassistant"] .cbi-section.fb-container {
+  padding: .5rem
+}
+
+[data-page="admin-system-fileassistant"] .fb-container .panel-container {
+  border-bottom-color: #dee2e6
+}
+
+[data-page^="admin-services-openclash"] .cbi-tabmenu>li {
+  border-right: none !important;
+  margin: 0 .4rem 0 0 !important
+}
+
+[data-page^="admin-services-openclash"] .cbi-tabmenu>li:last-child {
+  margin-right: 0 !important
+}
+
+[data-page^="admin-services-openclash"] #tab-content .dom {
+  padding: 0 1rem 1rem 1rem
+}
+
+[data-page^="admin-services-openclash"] .cbi-input-file {
+  padding: .2813rem;
+  box-sizing: content-box;
+  width: 15rem !important
+}
+
+[data-page^="admin-services-openclash"] [id="container.openclash.config.debug"] fieldset {
+  border: none !important;
+  padding: 1rem !important
+}
+
+[data-page^="admin-services-openclash"] #diag-rc-output>pre,
+[data-page^="admin-services-openclash"] #dns-rc-output>pre {
+  font-size: .875rem;
+  color: #8898aa;
+  border: 1px solid #dee2e6;
+  background-color: transparent;
+  border-radius: .25rem;
+  font-family: 'Google Sans' !important;
+  box-shadow: none
+}
+
+[data-page^="admin-services-openclash"] #debug-rc-output>textarea {
+  font-family: 'Google Sans' !important
+}
+
+[data-page^="admin-services-openclash"] .CodeMirror {
+  font-size: inherit;
+  font-family: 'Google Sans' !important
+}
+
+[data-page^="admin-services-openclash"] .cbi-button-up,
+[data-page^="admin-services-openclash"] .cbi-button-down {
+  padding: .8rem 1.5rem;
+  background-color: #f1f1f1;
+  font-size: 0
+}
+
+[data-page^="admin-services-openclash"] select#CORE_VERSION,
+[data-page^="admin-services-openclash"] select#RELEASE_BRANCH {
+  width: auto
 }
 
 /* IE hacks */
@@ -4275,7 +4536,7 @@ div#cbid\.appfilter\.appfilter\.chatapps {
 }
 
 div#service_status {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /* passwall faq */
