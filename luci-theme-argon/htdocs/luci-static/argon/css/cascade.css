@@ -689,7 +689,8 @@ footer {
   padding: 1rem;
   text-align: right;
   white-space: nowrap;
-  color: #aaa
+  color: #aaa;
+  margin-top: 3.5rem
 }
 
 footer>a {
