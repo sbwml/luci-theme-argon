@@ -3965,7 +3965,7 @@ pre.command-output {
   .cbi-value input[type="password"] {
     min-width: 17rem;
     max-width: 17rem;
-    max-height: 2.35rem;
+    /* max-height: 2.35rem; */
   }
 
   [id^="cbid.wolplus."].cbi-dropdown {
