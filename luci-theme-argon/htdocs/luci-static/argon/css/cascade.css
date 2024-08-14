@@ -2423,7 +2423,8 @@ td>table>tbody>tr>td,
   border-bottom-left-radius: .35rem;
   border-bottom-right-radius: .35rem;
   color: var(--main-menu-color);
-  margin-left: -0.80rem !important
+  margin-left: -0 !important;
+  left: 0;
 }
 
 .cbi-dropdown[open]>ul.dropdown li {
