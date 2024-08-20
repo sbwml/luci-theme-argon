@@ -1488,7 +1488,6 @@ table,
   border-radius: 0.375rem;
   overflow-y: hidden;
   width: 100%;
-  font-size: 95%;
   border-collapse: collapse;
   border-spacing: 0.175rem;
 }
@@ -2523,7 +2522,7 @@ td>table>tbody>tr>td,
 
 .cbi-progressbar::after {
   font-family: monospace;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
   font-size-adjust: 0.38;
   line-height: normal;
@@ -4243,7 +4242,7 @@ pre.command-output {
   }
 
   .cbi-progressbar::after {
-    font-size: 0.5rem;
+    font-size: 0.74rem;
     line-height: 1.5;
   }
 
