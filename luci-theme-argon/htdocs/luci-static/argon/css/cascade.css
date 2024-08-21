@@ -4049,6 +4049,10 @@ pre.command-output {
     text-align: left;
   }
 
+  .cbi-progressbar::after {
+    font-size: 0.785rem;
+  }
+
   .cbi-value-title {
     width: 14rem;
     padding-right: 1rem;
@@ -4242,8 +4246,8 @@ pre.command-output {
   }
 
   .cbi-progressbar::after {
-    font-size: 0.74rem;
-    line-height: 1.5;
+    font-size: 0.578rem;
+    line-height: 1.7;
   }
 
   .main-left {
