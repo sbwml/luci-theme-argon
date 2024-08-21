@@ -602,8 +602,7 @@ header .fill .status span[data-style="active"] {
 
 td>.ifacebadge,
 .td>.ifacebadge {
-  background-color: #483d8b;
-  background-color: var(--dark-primary);
+  background-color: #444950;
   border: 0;
 }
 
