@@ -4302,6 +4302,11 @@ pre.command-output {
 }
 
 @media screen and (max-width: 600px) {
+  .modal>pre,
+  .modal>textarea {
+    font-size: 0.8rem;
+  }
+
   .mobile-hide {
     display: none;
   }
