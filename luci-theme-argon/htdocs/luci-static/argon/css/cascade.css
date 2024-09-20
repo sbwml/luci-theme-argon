@@ -4432,8 +4432,11 @@ pre.command-output {
   }
 
   .login-page .login-container {
-    margin-left: 0rem !important;
+    margin: 0 auto !important;
+    position: revert;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .login-page .login-container .login-form .form-login .input-group::before {
