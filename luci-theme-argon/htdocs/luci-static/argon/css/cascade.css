@@ -3555,16 +3555,13 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
   color: #525f7f;
 }
 
-[data-page="admin-system-flash"] .modal label>input[type="checkbox"] {
-  /* top: -0.35rem; */
-}
-
 [data-page="admin-system-flash"] .modal .btn {
   white-space: normal !important;
 }
 
 [data-page="admin-system-flash"] .modal label.btn {
-  background-color: #413d3c;
+  background-color: #5e72e4;
+  background-color: var(--primary);
 }
 
 /* wireless overview */
