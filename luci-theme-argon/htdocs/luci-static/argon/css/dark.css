@@ -574,6 +574,24 @@ fieldset[id^="cbi-apply-"] {
   background: #252525;
 }
 
+div[style*="display:grid;grid-template-columns:repeat"] .ifacebox {
+  border-radius: 5px;
+}
+
+.cbi-tooltip {
+  box-shadow: 0 0 2px #8b8b8b;
+  border-radius: 3px;
+  background: #2c323c;
+  color: #c0c0c0;
+}
+
+.ifacebox-head {
+  padding: 0.25em;
+  background: var(--dark-primary) !important;
+  border-radius: 5px 5px 0px 0px;
+  color: #fff;
+}
+
 .ifacebox-head.active {
   background-color: var(--dark-primary) !important;
 }
