@@ -3160,6 +3160,7 @@ span[data-tooltip] .label {
   padding: 2px 5px;
   opacity: 0;
   transition: opacity .25s ease-in;
+  transform: translate(-50%, 10%);
 }
 
 .cbi-tooltip-container:hover .cbi-tooltip:not(:empty) {
