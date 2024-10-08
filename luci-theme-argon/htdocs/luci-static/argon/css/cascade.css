@@ -3315,8 +3315,8 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox {
 }
 
 div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body {
-  font-size: .7rem;
-  padding: .875rem
+  font-size: .895rem;
+  padding: .5rem
 }
 
 div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body .cbi-tooltip-container {
