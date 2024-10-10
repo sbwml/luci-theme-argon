@@ -2427,7 +2427,7 @@ td>table>tbody>tr>td,
 }
 
 .cbi-dropdown[open]>ul.dropdown li {
-  color: #000
+  color: #69758c
 }
 
 .cbi-dropdown>ul>li[display],
@@ -4569,6 +4569,21 @@ div#cbid\.appfilter\.appfilter\.chatapps {
 
 div#service_status {
   padding: 1rem;
+}
+
+/* 接口名字 */
+.cbi-section.cbi-tblsection strong {
+  font-weight: bold;
+}
+
+/* 流量导向（RPS） */
+#cbi-network-globals .cbi-dropdown[open] > ul.dropdown {
+  position: unset;
+}
+
+/* 流量导向（RPS） */
+div[id^="cbid.system.cfg"][id$=".notes"] {
+  min-width: 270px;
 }
 
 /* passwall faq */
