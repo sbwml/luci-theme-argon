@@ -2725,7 +2725,7 @@ body.modal-overlay-active #modal_overlay {
 
 #view {
   border-radius: .375rem;
-  overflow: hidden
+  overflow: visible
 }
 
 #view>.spinning {
@@ -4574,16 +4574,6 @@ div#service_status {
 /* 接口名字 */
 .cbi-section.cbi-tblsection strong {
   font-weight: bold;
-}
-
-/* 流量导向（RPS） */
-#cbi-network-globals .cbi-dropdown[open] > ul.dropdown {
-  position: unset;
-}
-
-/* 流量导向（RPS） */
-div[id^="cbid.system.cfg"][id$=".notes"] {
-  min-width: 270px;
 }
 
 /* passwall faq */
