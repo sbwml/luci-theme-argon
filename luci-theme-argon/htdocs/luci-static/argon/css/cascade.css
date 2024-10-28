@@ -2503,8 +2503,8 @@ td>table>tbody>tr>td,
 /* progressbar */
 .cbi-progressbar {
   position: relative;
-  min-width: 170px;
-  height: 24px;
+  min-width: 190px;
+  height: 22px;
   margin: 6px 0;
   /* border: thin solid #999; */
   background: #eee;
@@ -4260,8 +4260,7 @@ pre.command-output {
   }
 
   .cbi-progressbar::after {
-    font-size: 0.578rem;
-    line-height: 1.7;
+    font-size: 0.675rem;
   }
 
   .main-left {
@@ -4316,6 +4315,15 @@ pre.command-output {
 }
 
 @media screen and (max-width: 600px) {
+  tr>td,
+  tr>th,
+  .tr>.td,
+  .tr>.th,
+  .cbi-section-table-row::before,
+  #cbi-wireless>#wifi_assoclist_table>.tr:nth-child(2) {
+    padding: 1.1em 0.7rem;
+  }
+
   .modal>pre,
   .modal>textarea {
     font-size: 0.8rem;
