@@ -756,6 +756,10 @@ input,
   outline: none;
 }
 
+.cbi-dropdown[open]>ul.dropdown>li:hover {
+  background-color: #444950; /* 鼠标悬停时的背景色块 */
+}
+
 .ifacebadge {
   background-color: #444950;
 }

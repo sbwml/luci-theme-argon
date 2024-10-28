@@ -2461,6 +2461,10 @@ td>table>tbody>tr>td,
   padding: .5rem .8rem
 }
 
+.cbi-dropdown[open]>ul.dropdown>li:hover {
+  background-color: #f0f0f0; /* 鼠标悬停时的背景色块 */
+}
+
 .cbi-dropdown[open]>ul.dropdown>li label {
   margin-left: .5rem
 }
