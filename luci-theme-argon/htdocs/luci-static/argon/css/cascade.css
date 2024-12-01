@@ -2151,9 +2151,31 @@ td>table>tbody>tr>td,
 .cbi-dynlist>.item {
   position: relative;
   max-width: 25rem;
-  pointer-events: none;
+  pointer-events: auto;
   color: #8898aa;
   outline: 0;
+  cursor: move;
+  user-select: text;
+}
+
+.cbi-dynlist > .item.drag-over { 
+  border-top: 1px solid var(--primary);
+}
+
+.cbi-dynlist > .item.dragging {
+  opacity: 0.5;
+}
+
+.cbi-dynlist > .item > span {
+  pointer-events: none;
+}
+
+.cbi-dynlist > .add-item > .cbi-input-text.drag-over {
+  border-top: 1px solid var(--primary);
+}
+
+.cbi-dynlist > .add-item > .cbi-button-add.drag-over {
+  border-top: 1px solid var(--primary);
 }
 
 .cbi-dynlist[name="sshkeys"]>.item {
