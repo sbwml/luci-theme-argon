@@ -4510,6 +4510,12 @@ pre.command-output {
   }
 }
 
+@media (max-height: 530px) {
+  .mobile-hide {
+    display: none !important;
+  }
+}
+
 .cbi-section .cbi-section-remove:nth-of-type(2n),
 .container>.cbi-section .cbi-section-node:nth-of-type(2n) {
   background-color: var(--white);
