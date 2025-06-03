@@ -962,6 +962,12 @@ table,
   background-color: #2c323c
 }
 
+/* admin/status/channel_analysis */
+div#channel_graph {
+  border: 1px solid #292c31 !important;
+  background: #2c323c !important;
+}
+
 /* luci-app-filemanager */
 #file-manager-container button#go-button {
   background-color: #2c323c !important;
