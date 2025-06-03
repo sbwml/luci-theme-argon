@@ -1031,3 +1031,23 @@ div#channel_graph {
 .Dashboard .cbi-rowstyle-1 {
   background-color: #1b212a;
 }
+
+/* admin/system/crontab */
+[data-page="admin-system-crontab"] #view p textarea {
+  background: #2c323c;
+  border: unset;
+}
+
+/* admin/network/diagnostics */
+[data-page="admin-network-diagnostics"] .tr>.td {
+  background-color: #2c323c !important;
+  border-bottom: unset !important;
+}
+
+[data-page="admin-network-diagnostics"] .cbi-section {
+  background: #2c323c !important;
+}
+
+[data-page="admin-network-diagnostics"] textarea {
+  border: 1px solid #3d424b;
+}
