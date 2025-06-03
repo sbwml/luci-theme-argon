@@ -368,11 +368,15 @@ div>.table>.tbody>.tr:nth-of-type(2n) {
 
 .cbi-tabmenu li[class~="cbi-tab"] a {
   color: #ccc;
+  background-color: #444950;
+  border-radius: 6px 6px 0 0;
+  border-bottom: .18751rem solid var(--dark-primary);
 }
 
 .cbi-tabmenu>li:hover {
   color: #ccc;
-  background: #2d2d2d;
+  background: #444950;
+  border-bottom: .18751rem solid var(--dark-primary);
 }
 
 .cbi-tabmenu>li[class~="cbi-tab"] {
