@@ -4318,7 +4318,11 @@ pre.command-output {
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1500px) {
-  tr>td, tr>th, .tr>.td, .tr>.th {
+  /* admin/system/diskman */
+  #cbi-diskman tr>td,
+  #cbi-diskman tr>th,
+  #cbi-diskman .tr>.td,
+  #cbi-diskman .tr>.th {
     padding: 0.5rem;
   }
 }
