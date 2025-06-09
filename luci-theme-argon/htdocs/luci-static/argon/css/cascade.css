@@ -4737,6 +4737,12 @@ div#add_link_div {
   margin-top: 0.575rem;
 }
 
+/* luci-app-mwan3 */
+#mwan3-service-status > .alert-message {
+  height: 6rem !important;
+  min-height: 8rem !important;
+}
+
 @media screen and (max-width: 600px) {
   div#content-filemanager {
     overflow-x: auto;
