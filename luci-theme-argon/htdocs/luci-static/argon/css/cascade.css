@@ -3609,11 +3609,16 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
 
 [data-page="admin-system-flash"] .modal .btn {
   white-space: normal !important;
+  text-align: left !important;
 }
 
 [data-page="admin-system-flash"] .modal label.btn {
-  background-color: #5e72e4;
-  background-color: var(--primary);
+  background-color: hsl(from var(--primary) h s l / 20%);
+  color: var(--primary) !important;
+}
+
+[data-page="admin-system-flash"] input[type="checkbox"] {
+  border: 1px solid hsl(from var(--primary) h s l / 60%) !important;
 }
 
 /* wireless overview */
