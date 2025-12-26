@@ -2152,29 +2152,50 @@ td>table>tbody>tr>td,
   align-items: center
 }
 
-.cbi-section.fade-in .cbi-title>div:last-child {
+.cbi-section.fade-in .cbi-title > div:last-child {
   position: absolute;
   right: 1rem
 }
 
-.cbi-section.fade-in .cbi-title>div:last-child span {
-  display: inline-block;
-  position: relative;
-  font-size: 0
+.cbi-section.fade-in .cbi-title > div:last-child span.label {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0;
+  border-radius: 0;
+  min-width: auto;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent
 }
 
-.cbi-section.fade-in .cbi-title>div:last-child span::after {
+.cbi-section.fade-in .cbi-title > div:last-child span {
+  font-size: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center
+}
+
+.cbi-section.fade-in .cbi-title > div:last-child span::after {
   content: "\e90f";
   font-family: 'argon' !important;
   font-size: 1.1rem;
-  display: inline-block;
-  transition: transform 0.3s ease;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1
+  line-height: 1;
+  color: #888;
+  transition: transform 0.25s ease, color 0.2s ease;
+  -webkit-font-smoothing: antialiased
 }
 
-.cbi-section.fade-in .cbi-title>div:last-child span[data-style='inactive']::after {
+.cbi-section.fade-in
+.cbi-title > div:last-child
+span[data-style='inactive']::after {
   transform: rotate(90deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cbi-section.fade-in .cbi-title > div:last-child span:hover::after {
+    color: var(--primary)
+  }
 }
 
 @media screen and (min-width: 1280px) {
