@@ -2208,7 +2208,7 @@ td>table>tbody>tr>td,
 .td.cbi-section-actions>*>*,
 .td.cbi-section-actions>*>form>* {
   margin: 0 5px;
-  display: flex;
+  display: flex !important;
   align-items: center
 }
 
