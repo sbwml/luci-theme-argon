@@ -4696,6 +4696,10 @@ pre.command-output {
     right: 0 !important;
     margin-bottom: 1rem;
   }
+  
+  .cbi-filebrowser {
+    min-width: 210px !important;
+  }
 }
 
 @media screen and (min-width: 600px) {
