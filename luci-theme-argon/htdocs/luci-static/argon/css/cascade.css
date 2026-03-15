@@ -89,6 +89,7 @@ body {
   font-size: 16px;
   font-family: var(--font-family-sans-serif);
   scrollbar-width: none;
+  background-color: var(--background-color);
 }
 
 html {
@@ -97,12 +98,12 @@ html {
 }
 
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
@@ -443,7 +444,7 @@ h5 {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #000;
   background-color: var(--darker);
   overflow: hidden
@@ -2753,6 +2754,82 @@ td>table>tbody>tr>td,
   text-align: center;
   white-space: pre;
   text-overflow: ellipsis;
+}
+body[data-page="admin-status-overview"] .cbi-progressbar {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  border-radius: 50%;
+  background: conic-gradient(var(--primary) var(--progress, 0%), #eee 0);
+  border: none;
+  color: transparent;
+  min-width: 0;
+  overflow: visible;
+}
+
+body[data-page="admin-status-overview"] .cbi-progressbar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--background-color);
+}
+
+body[data-page="admin-status-overview"] .cbi-progressbar > div {
+  width: 100% !important; /* Override inline style */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--primary);
+  background: none !important; /* Override inline background */
+  transition: none; /* Disable width transition */
+}
+
+/* Hide the old ::after pseudo-element that shows the title */
+body[data-page="admin-status-overview"] .cbi-progressbar::after {
+  display: none;
+}
+
+body[data-page="admin-status-overview"] .cbi-progressbar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+body[data-page="admin-status-overview"] .cbi-progressbar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 90px;
+}
+
+body[data-page="admin-status-overview"] .cbi-progressbar-label {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--font-color);
+  text-align: center;
+}
+
+body[data-page="admin-status-overview"] .cbi-progressbar-data {
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--font-color-2);
+  text-align: center;
+  word-break: break-all;
+  max-width: 100%;
 }
 
 #modal_overlay {
