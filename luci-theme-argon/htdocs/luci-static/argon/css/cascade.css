@@ -2803,7 +2803,7 @@ body[data-page="admin-status-overview"] .cbi-progressbar::after {
 body[data-page="admin-status-overview"] .cbi-progressbar-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 20px;
   padding: 10px 0;
 }
@@ -2812,7 +2812,6 @@ body[data-page="admin-status-overview"] .cbi-progressbar-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
   min-width: 90px;
 }
 
