@@ -96,6 +96,15 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 body {
   font-size: 0.975rem;
   background-color: #f4f5f7;
@@ -2931,6 +2940,7 @@ body.modal-overlay-active #modal_overlay {
 }
 
 #view {
+  animation: fade-in .5s;
   border-radius: .375rem;
   overflow: visible
 }
