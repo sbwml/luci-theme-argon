@@ -1439,8 +1439,8 @@ h5 {
 .cbi-section-descr {
   font-size: small;
   font-weight: var(--font-weight);
-  line-height: 1.42857143;
-  padding: 0.5rem 1.5rem;
+  /* line-height: 1.42857143; */
+  padding: 0 0 0 1.35rem;
 }
 
 .cbi-map-descr+fieldset {
@@ -1486,11 +1486,11 @@ fieldset>fieldset,
 [data-tab-title]>h3:first-child,
 [data-tab-title]>h4:first-child,
 [data-tab-title]>p:first-child {
-  padding: 1rem;
+  padding: 0.375rem;
 }
 
 .cbi-section p {
-  padding: 1rem;
+  padding: 0.375rem;
 }
 
 table {
@@ -2885,9 +2885,9 @@ body[data-page=""] .cbi-progressbar-data {
   padding: 8.5px;
   cursor: auto;
   /* white-space: pre-wrap; */
-  color: #ffc100;
+  color: #48439b;
   outline: 0;
-  background-color: #101010;
+  background-color: #c2c2c25e;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
 }
 
