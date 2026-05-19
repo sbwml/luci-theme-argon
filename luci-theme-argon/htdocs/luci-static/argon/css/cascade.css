@@ -3075,7 +3075,7 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .cbi-page-actions {
-  padding: 1rem;
+  padding: 0 4rem 0 0;
   position: absolute;
   right: 0;
   justify-content: flex-end
