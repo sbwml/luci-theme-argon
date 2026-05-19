@@ -90,6 +90,7 @@ body {
   font-family: var(--font-family-sans-serif);
   scrollbar-width: none;
   background-color: var(--background-color);
+  overflow: hidden !important;
 }
 
 html {
@@ -2856,7 +2857,6 @@ body[data-page=""] .cbi-progressbar-data {
 
 .modal {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   width: 90%;
   min-width: 270px;
