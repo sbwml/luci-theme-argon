@@ -2757,8 +2757,10 @@ td>table>tbody>tr>td,
   white-space: pre;
   text-overflow: ellipsis;
 }
+
 body[data-page="admin-status-overview"] .cbi-progressbar,
-body[data-page=""] .cbi-progressbar {
+body[data-page=""] .cbi-progressbar,
+.cbi-progressbar-grid .cbi-progressbar {
   position: relative;
   width: 60px;
   height: 60px;
@@ -2772,7 +2774,8 @@ body[data-page=""] .cbi-progressbar {
 }
 
 body[data-page="admin-status-overview"] .cbi-progressbar::before,
-body[data-page=""] .cbi-progressbar::before {
+body[data-page=""] .cbi-progressbar::before,
+.cbi-progressbar-grid .cbi-progressbar::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -2785,7 +2788,8 @@ body[data-page=""] .cbi-progressbar::before {
 }
 
 body[data-page="admin-status-overview"] .cbi-progressbar > div,
-body[data-page=""] .cbi-progressbar > div {
+body[data-page=""] .cbi-progressbar > div,
+.cbi-progressbar-grid .cbi-progressbar > div {
   width: 100% !important; /* Override inline style */
   height: 100%;
   position: absolute;
@@ -2802,12 +2806,14 @@ body[data-page=""] .cbi-progressbar > div {
 
 /* Hide the old ::after pseudo-element that shows the title */
 body[data-page="admin-status-overview"] .cbi-progressbar::after,
-body[data-page=""] .cbi-progressbar::after {
+body[data-page=""] .cbi-progressbar::after,
+.cbi-progressbar-grid .cbi-progressbar::after {
   display: none;
 }
 
 body[data-page="admin-status-overview"] .cbi-progressbar-grid,
-body[data-page=""] .cbi-progressbar-grid {
+body[data-page=""] .cbi-progressbar-grid,
+.cbi-progressbar-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -2816,7 +2822,8 @@ body[data-page=""] .cbi-progressbar-grid {
 }
 
 body[data-page="admin-status-overview"] .cbi-progressbar-item,
-body[data-page=""] .cbi-progressbar-item {
+body[data-page=""] .cbi-progressbar-item,
+.cbi-progressbar-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2824,7 +2831,8 @@ body[data-page=""] .cbi-progressbar-item {
 }
 
 body[data-page="admin-status-overview"] .cbi-progressbar-label,
-body[data-page=""] .cbi-progressbar-label {
+body[data-page=""] .cbi-progressbar-label,
+.cbi-progressbar-label {
   margin-top: 8px;
   font-size: 14px;
   color: var(--font-color);
@@ -2832,7 +2840,8 @@ body[data-page=""] .cbi-progressbar-label {
 }
 
 body[data-page="admin-status-overview"] .cbi-progressbar-data,
-body[data-page=""] .cbi-progressbar-data {
+body[data-page=""] .cbi-progressbar-data,
+.cbi-progressbar-data {
   margin-top: 4px;
   font-size: 11px;
   color: var(--font-color-2);
@@ -5200,4 +5209,11 @@ div#add_link_div {
 /* luci-app-ota */
 div#upgrade_log {
   padding: 15px;
+}
+
+/* SPA Router staging */
+.argon-staging {
+  visibility: hidden;
+  height: 0;
+  overflow: clip;
 }
