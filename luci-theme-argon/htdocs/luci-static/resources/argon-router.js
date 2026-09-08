@@ -159,11 +159,15 @@ function getContentHost() {
 }
 
 function stageView(contentHost) {
+	if (contentHost && window.getComputedStyle(contentHost).position === 'static') {
+		contentHost.style.position = 'relative';
+	}
 	const wrapper = document.createElement('div');
 	wrapper.className = 'argon-staging';
-	wrapper.style.cssText = 'visibility: hidden; height: 0; overflow: clip; position: relative;';
+	wrapper.style.cssText = 'position: absolute; top: 0; left: 0; width: 100%; height: 0; max-height: 0; overflow: hidden; visibility: hidden; pointer-events: none; opacity: 0; z-index: -9999; margin: 0; padding: 0; border: none;';
 	const view = document.createElement('div');
 	view.id = 'view';
+	view.style.cssText = 'margin: 0; padding: 0; border: none; width: 100%;';
 	wrapper.appendChild(view);
 	contentHost.insertBefore(wrapper, contentHost.firstChild);
 	return { wrapper, view };
@@ -192,10 +196,12 @@ function dropStage(stage) {
 	if (stage && stage.wrapper && stage.wrapper.parentNode) discard(stage.wrapper);
 }
 
-function sweepAround(contentHost) {
+function sweepAround(contentHost, rsegs) {
+	const isOverview = rsegs && rsegs.join('-') === 'admin-status-overview';
 	Array.from(contentHost.children).forEach((c) => {
 		if (c.id !== 'view' && c.id !== 'tabmenu' && !c.classList.contains('argon-staging') &&
-		    !c.classList.contains('alert-message') && c.nodeName !== 'NOSCRIPT')
+		    !c.classList.contains('alert-message') && c.nodeName !== 'NOSCRIPT' &&
+		    !(isOverview && c.nodeName === 'H2' && c.getAttribute('name') === 'content'))
 			discard(c);
 	});
 }
@@ -209,8 +215,8 @@ function liveView(contentHost, stage) {
 	return v;
 }
 
-function commitStage(stage, contentHost) {
-	sweepAround(contentHost);
+function commitStage(stage, contentHost, rsegs) {
+	sweepAround(contentHost, rsegs);
 	const live = liveView(contentHost, stage);
 	const nodes = Array.from(stage.view.childNodes);
 	const dom = window.L ? window.L.dom : null;
@@ -218,6 +224,19 @@ function commitStage(stage, contentHost) {
 		dom.content(live, nodes);
 	else if (live)
 		live.replaceChildren(...nodes);
+
+	if (rsegs && rsegs.join('-') === 'admin-status-overview') {
+		let h2 = contentHost.querySelector('h2[name="content"]');
+		if (!h2) {
+			h2 = document.createElement('h2');
+			h2.setAttribute('name', 'content');
+			const fn = window._ || (typeof _ === 'function' ? _ : null);
+			h2.textContent = fn ? fn('Status') : 'Status';
+			contentHost.insertBefore(h2, live);
+		}
+	}
+
+	renderMenu();
 	dropStage(stage);
 }
 
@@ -396,6 +415,7 @@ function titleHost() {
 	return _titleHost;
 }
 
+let _maInstance = null;
 function renderMenu() {
 	const treeData = tree.tree();
 	if (!treeData) return;
@@ -404,28 +424,37 @@ function renderMenu() {
 	const modemenu = document.querySelector('#modemenu');
 	const mainmenu = document.querySelector('#mainmenu');
 
-	if (tabmenu) { L.dom.content(tabmenu, null); tabmenu.style.display = 'none'; }
-	if (modemenu) { L.dom.content(modemenu, null); modemenu.style.display = 'none'; }
-	if (mainmenu) {
-		mainmenu.querySelectorAll('ul.nav').forEach(el => el.remove());
-	}
+	const doRender = (ma) => {
+		if (tabmenu) { L.dom.content(tabmenu, null); tabmenu.style.display = 'none'; }
+		if (modemenu) { L.dom.content(modemenu, null); modemenu.style.display = 'none'; }
+		if (mainmenu) {
+			mainmenu.querySelectorAll('ul.nav').forEach(el => el.remove());
+		}
 
-	// Close mobile sidebar if open
-	const showSideButton = document.querySelector('a.showSide');
-	if (showSideButton && showSideButton.classList.contains('active')) {
-		const darkMask = document.querySelector('.darkMask');
-		const scrollbarArea = document.querySelector('.main-right');
-		showSideButton.classList.remove('active');
-		if (mainmenu) mainmenu.classList.remove('active');
-		if (scrollbarArea) scrollbarArea.classList.remove('active');
-		if (darkMask) darkMask.classList.remove('active');
-	}
+		// Close mobile sidebar if open
+		const showSideButton = document.querySelector('a.showSide');
+		if (showSideButton && showSideButton.classList.contains('active')) {
+			const darkMask = document.querySelector('.darkMask');
+			const scrollbarArea = document.querySelector('.main-right');
+			showSideButton.classList.remove('active');
+			if (mainmenu) mainmenu.classList.remove('active');
+			if (scrollbarArea) scrollbarArea.classList.remove('active');
+			if (darkMask) darkMask.classList.remove('active');
+		}
 
-	window.L.require('menu-argon').then(ma => {
 		if (typeof ma.render === 'function') {
 			ma.render(treeData);
 		}
-	});
+	};
+
+	if (_maInstance) {
+		doRender(_maInstance);
+	} else {
+		window.L.require('menu-argon').then(ma => {
+			_maInstance = ma;
+			doRender(ma);
+		});
+	}
 }
 
 let _navGen = 0;
@@ -479,12 +508,6 @@ function navigate(pathname, push) {
 	const host = titleHost();
 	document.title = node.title ? (host + ' - ' + _(node.title) + ' - LuCI') : (host + ' - LuCI');
 
-	renderMenu();
-
-	if (push) {
-		window.scrollTo(0, 0);
-	}
-
 	const main = document.getElementById('maincontent');
 	if (main) main.focus({ preventScroll: true });
 
@@ -523,7 +546,10 @@ function navigate(pathname, push) {
 			.then(() => {
 				if (gen !== _navGen) { dropStage(stage); return; }
 				document.body.setAttribute('data-page', rsegs.join('-'));
-				commitStage(stage, contentHost);
+				commitStage(stage, contentHost, rsegs);
+				if (push && !restoreTo) {
+					window.scrollTo(0, 0);
+				}
 				if (rsegs.join('-') === 'admin-status-overview') {
 					window.L.require('menu-argon').then(ma => {
 						if (typeof ma.initCircularProgressBars === 'function') {
@@ -631,6 +657,7 @@ return baseclass.extend({
 		ui.menu.load().then((t) => {
 			tree.setTree(t);
 			wireRouter();
+			window.L.require('menu-argon').then(ma => { _maInstance = ma; }).catch(() => {});
 		});
 	}
 });
